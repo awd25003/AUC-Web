@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>අම්බලන්ගොඩ නගර සභාව</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="site-loader" id="siteLoader">
+    <div class="loader-wrap">
+      <div class="loader-ring"></div>
+      <div class="loader-text">අම්බලන්ගොඩ නගර සභාව</div>
+    </div>
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="floating-social">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container-xxl">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <a href="tel:+94912258275"><i class="fa-solid fa-phone"></i> +94 91 225 8275</a>
+          <a href="mailto:ambalangodauc@gmail.com"><i class="fa-solid fa-envelope"></i> ambalangodauc@gmail.com</a>
+          <span><i class="fa-solid fa-location-dot"></i> අම්බලන්ගොඩ, ශ්‍රී ලංකාව</span>
+        </div>
+
+        <div class="topbar-right">
+          <div class="live-clock" id="liveClock">
+            <i class="fa-regular fa-clock"></i>
+            <span>Loading...</span>
+          </div>
+          <div class="lang-switch">
+            <a href="#" class="active">සිං</a>
+            <a href="#">த</a>
+            <a href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header-wrap">
+    <div class="container-xxl">
+      <div class="brandbar">
+        <div class="brand-left">
+          <div class="brand-logos">
+            <img src="img/logo2.jpg" alt="Logo 1" class="brand-logo">
+            <img src="img/logo.png.jpg" alt="Logo 2" class="brand-logo">
+          </div>
+
+          <div class="brand-text">
+            <span class="gov-badge">Official Government Portal</span>
+            <h1>අම්බලන්ගොඩ නගර සභාව</h1>
+            <p>Ambalangoda Urban Council</p>
+          </div>
+        </div>
+
+        <div class="brand-right">
+          <a href="#" class="header-btn btn-solid"><i class="fa-solid fa-credit-card"></i> Online Payments</a>
+          <a href="#" class="header-btn btn-outline-white"><i class="fa-solid fa-file-lines"></i> බාගත කිරීම්</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-xl premium-navbar" id="mainNavbar">
+      <div class="container-xxl">
+
+        <a class="navbar-brand nav-brand-mobile" href="#">AUC</a>
+
+        <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item"><a class="nav-link active" href="#">මුල් පිටුව</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">අප ගැන</a>
+              <ul class="dropdown-menu premium-dropdown">
+                <li><a class="dropdown-item" href="#">ඉතිහාසය</a></li>
+                <li><a class="dropdown-item" href="#">සභික මණ්ඩලය</a></li>
+                <li><a class="dropdown-item" href="#">කාර්ය මණ්ඩලය</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">පුරවැසි ප්‍රඥප්තිය</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">සේවාවන්</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">පුවත්</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ගැලරිය</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">බාගත කිරීම්</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">සම්බන්ධ වන්න</a></li>
+          </ul>
+
+          <form class="nav-search" role="search">
+            <input type="search" placeholder="Search here..." aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/hero1.jpg" class="d-block w-100 hero-img" alt="hero1">
+          <div class="hero-overlay"></div>
+          <div class="container-xxl">
+            <div class="hero-content">
+              <span class="hero-tag">Public Service Excellence</span>
+              <h2>නවීන පහසුකම් සමඟ<br>ජනතාවට සමීප නගර සභාවක්</h2>
+              <p>විශ්වාසදායක, කාර්යක්ෂම සහ ඩිජිටල් තාක්ෂණය සමඟ ජනතාවට සේවය කරන නවීන පරිපාලන පද්ධතියක්.</p>
+              <div class="hero-actions">
+                <a href="#" class="hero-btn hero-primary">සේවාවන් බලන්න</a>
+                <a href="#" class="hero-btn hero-secondary">අප ගැන</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/hero2.jpg" class="d-block w-100 hero-img" alt="hero2">
+          <div class="hero-overlay"></div>
+          <div class="container-xxl">
+            <div class="hero-content">
+              <span class="hero-tag">Digital Government Services</span>
+              <h2>ඔන්ලයින් ගෙවීම් සහ<br>තොරතුරු සේවා එකම තැනකින්</h2>
+              <p>බදු, ගාස්තු, නිවේදන, බාගත කිරීම් සහ ජනතා සේවා සරලව සහ වේගයෙන්.</p>
+              <div class="hero-actions">
+                <a href="#" class="hero-btn hero-primary">Online Payments</a>
+                <a href="#" class="hero-btn hero-secondary">Downloads</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/hero3.jpg" class="d-block w-100 hero-img" alt="hero3">
+          <div class="hero-overlay"></div>
+          <div class="container-xxl">
+            <div class="hero-content">
+              <span class="hero-tag">Urban Development</span>
+              <h2>පිරිසිදු, ආරක්ෂිත සහ<br>සංවර්ධිත නගරයක් වෙනුවෙන්</h2>
+              <p>පරිසරය, යටිතල පහසුකම් සහ ප්‍රජා සංවර්ධනය තුළින් වඩා හොඳ අනාගතයක්.</p>
+              <div class="hero-actions">
+                <a href="#" class="hero-btn hero-primary">පුවත් කියවන්න</a>
+                <a href="#" class="hero-btn hero-secondary">සම්බන්ධ වන්න</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev premium-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next premium-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- STATS -->
+    <div class="container-xxl">
+      <div class="stats-row">
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <h3 data-counter="25000">0</h3>
+            <p>Citizens Served</p>
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+          <div>
+            <h3 data-counter="35">0</h3>
+            <p>Public Services</p>
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <div>
+            <h3 data-counter="120">0</h3>
+            <p>News Updates</p>
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+          <div>
+            <h3 data-counter="80">0</h3>
+            <p>Downloads</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="section-space">
+    <div class="container-xxl">
+      <div class="section-title text-center reveal">
+        <span class="section-mini">Essential Public Access</span>
+        <h2>ඉක්මන් ප්‍රවේශ සේවාවන්</h2>
+        <p>නගර සභාවේ ප්‍රධාන සේවාවන් වෙත සරල සහ ඉක්මන් ප්‍රවේශයක් ලබා ගන්න.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="quick-card reveal">
+            <div class="quick-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h4>Online Payments</h4>
+            <p>බදු සහ ගාස්තු අන්තර්ජාලය ඔස්සේ ගෙවන්න.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="quick-card reveal">
+            <div class="quick-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+            <h4>Downloads</h4>
+            <p>අයදුම්පත් සහ ලේඛන බාගත කරගන්න.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="quick-card reveal">
+            <div class="quick-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h4>Announcements</h4>
+            <p>නවතම නිවේදන සහ තොරතුරු බලන්න.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="quick-card reveal">
+            <div class="quick-icon"><i class="fa-solid fa-id-card"></i></div>
+            <h4>Citizen Charter</h4>
+            <p>ජනතා සේවා ප්‍රමිතීන් සහ වගකීම් බලන්න.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / MESSAGE -->
+  <section class="section-space section-light">
+    <div class="container-xxl">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="chairman-image reveal">
+            <img src="img/hero2.jpg" alt="chairman">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="message-card reveal">
+            <span class="section-mini">Chairman’s Message</span>
+            <h2>ජනතාව සමඟ එකට ගමන් කරන පරිපාලනයක්</h2>
+            <p>
+              අම්බලන්ගොඩ නගර සභාව ලෙස අපගේ අරමුණ වන්නේ නවීන, විනිවිදභාවයෙන් යුත් සහ
+              පුරවැසියා කේන්ද්‍ර කරගත් පාලන පද්ධතියක් ගොඩනැගීමයි.
+            </p>
+            <p>
+              නගර සංවර්ධනය, පරිසර ආරක්ෂාව, සෞඛ්‍ය හා පොදු පහසුකම් ඉහළ නැංවීම සඳහා
+              අපි කැපවී සිටිමු.
+            </p>
+            <a href="#" class="section-link">වැඩිදුර කියවන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section-space">
+    <div class="container-xxl">
+      <div class="section-title text-center reveal">
+        <span class="section-mini">Public Services</span>
+        <h2>අපගේ සේවාවන්</h2>
+        <p>ජනතාවට සෘජුවම සම්බන්ධ වන ප්‍රධාන නාගරික සේවාවන්.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-tree"></i></div>
+            <h4>අනතුරුදායක ගස් ඉවත් කිරීම</h4>
+            <p>ආරක්ෂිත පරිසරයක් සඳහා වෘක්ෂ කළමනාකරණ සේවාව.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-recycle"></i></div>
+            <h4>අපද්‍රව්‍ය කළමනාකරණය</h4>
+            <p>පිරිසිදු නගරයක් සඳහා ප්‍රතිචක්‍රීකරණ සහ කසළ කළමනාකරණය.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-book"></i></div>
+            <h4>පුස්තකාල සේවා</h4>
+            <p>අධ්‍යාපනික සහ පොදු කියවීම් පහසුකම්.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-road"></i></div>
+            <h4>මාර්ග සංවර්ධනය</h4>
+            <p>මාර්ග සහ නාගරික යටිතල පහසුකම් නඩත්තු කිරීම.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h4>ඉඩම් අනුමත කිරීම</h4>
+            <p>සැලසුම් සහ භූමිය සම්බන්ධ අනුමැතියන්.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-file-signature"></i></div>
+            <h4>සහතික නිකුත් කිරීම</h4>
+            <p>වීථි රේඛා සහ අනෙකුත් සහතික ලබාදීම.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-house-medical"></i></div>
+            <h4>සෞඛ්‍ය සේවාවන්</h4>
+            <p>ප්‍රාදේශීය සෞඛ්‍ය සහ පරිසර ආරක්ෂණ කටයුතු.</p>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-card reveal">
+            <div class="service-card-icon"><i class="fa-solid fa-city"></i></div>
+            <h4>නාගරික සැලසුම්කරණය</h4>
+            <p>නගර සංවර්ධනයට අදාල නියාමන සහ සැලසුම් සේවා.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section-space section-light">
+    <div class="container-xxl">
+      <div class="section-title reveal">
+        <span class="section-mini">Latest News</span>
+        <h2>නවතම පුවත් සහ නිවේදන</h2>
+      </div>
+
+      <div class="news-carousel-wrap reveal">
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero1.jpg" alt="news1">
+                      <span class="news-badge">Featured</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-01-01</div>
+                      <h4>නව වසරේ රාජකාරී කටයුතු උත්සවශීලීව ආරම්භ විය</h4>
+                      <p>නව වසරේ රාජකාරී කටයුතු ආශීර්වාද මධ්‍යයේ ආරම්භ කරන ලදී.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero2.jpg" alt="news2">
+                      <span class="news-badge">Update</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-01-15</div>
+                      <h4>පිරිසිදු නගර වැඩසටහන සාර්ථකව අවසන් විය</h4>
+                      <p>ප්‍රදේශය පුරා පිරිසිදු කිරීමේ වැඩසටහන් ක්‍රියාත්මක කරන ලදී.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero3.jpg" alt="news3">
+                      <span class="news-badge">Notice</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-02</div>
+                      <h4>නව ඔන්ලයින් ගෙවීම් පද්ධතිය හඳුන්වා දෙන ලදී</h4>
+                      <p>ගෙවීම් වඩා පහසු කිරීම සඳහා නව ඩිජිටල් පද්ධතියක් ආරම්භ කෙරිණි.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero2.jpg" alt="news4">
+                      <span class="news-badge">Event</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-20</div>
+                      <h4>ප්‍රජා සහභාගීත්ව වැඩසටහනක් සංවිධානය කරන ලදී</h4>
+                      <p>ප්‍රජා අදහස් සහ යෝජනා ලබාගැනීම සඳහා විශේෂ හමුවක් පැවැත්විය.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero3.jpg" alt="news5">
+                      <span class="news-badge">Project</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-25</div>
+                      <h4>මාර්ග සහ නාගරික පහසුකම් නවීකරණය ආරම්භ වේ</h4>
+                      <p>ප්‍රදේශයේ ප්‍රධාන මාර්ග සහ පොදු පහසුකම් අලුත්වැඩියා කෙරේ.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4">
+                  <article class="news-card">
+                    <div class="news-image">
+                      <img src="img/hero1.jpg" alt="news6">
+                      <span class="news-badge">Public</span>
+                    </div>
+                    <div class="news-content">
+                      <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-03-01</div>
+                      <h4>ජනතා සේවා කවුන්ටරය නවීකරණය කර ඇත</h4>
+                      <p>ජනතාවට වේගවත් සහ ගුණාත්මක සේවාවක් සැපයීමට පියවර ගෙන ඇත.</p>
+                      <a href="#" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev premium-news-control" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next premium-news-control" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE STRIP -->
+  <section class="feature-strip">
+    <div class="container-xxl">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="feature-box reveal">
+            <i class="fa-solid fa-bolt"></i>
+            <h4>Fast Access</h4>
+            <p>ජනතාවට අවශ්‍ය සේවාවන් සහ තොරතුරු ඉක්මනින් ලබාගත හැක.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="feature-box reveal">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h4>Trusted Administration</h4>
+            <p>විනිවිදභාවයෙන් යුත් සහ ගෞරවනීය රාජ්‍ය පරිපාලන සේවාවක්.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="feature-box reveal">
+            <i class="fa-solid fa-laptop-file"></i>
+            <h4>Digital Ready</h4>
+            <p>ඩිජිටල්කරණය හරහා නවීන සහ සරල ජනතා සේවාවන්.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-xxl">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-box reveal">
+            <h3>අප සමඟ සම්බන්ධ වන්න</h3>
+            <p><i class="fa-solid fa-location-dot"></i> නගර සභාව, අම්බලන්ගොඩ</p>
+            <p><i class="fa-solid fa-phone"></i> +94 91 225 8275</p>
+            <p><i class="fa-solid fa-fax"></i> +94 91 225 8285</p>
+            <p><i class="fa-solid fa-envelope"></i> ambalangodauc@gmail.com</p>
+
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-box reveal">
+            <h3>මාර්ග සිතියම</h3>
+            <div class="map-wrap">
+              <iframe
+                src="https://www.google.com/maps?q=Ambalangoda%20Urban%20Council&output=embed"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-box reveal">
+            <h3>වැදගත් සබැඳි</h3>
+            <ul class="footer-links">
+              <li><a href="#">ප්‍රධාන ලේකම් කාර්යාලය</a></li>
+              <li><a href="#">ප්‍රධාන අමාත්‍යාංශය</a></li>
+              <li><a href="#">රාජ්‍ය සේවා කොමිෂන් සභාව</a></li>
+              <li><a href="#">පළාත් පාලන දෙපාර්තමේන්තුව</a></li>
+            </ul>
+
+            <div class="visitor-box">
+              <div class="visitor-count" data-counter="72">0</div>
+              <span>Visitors Online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 අම්බලන්ගොඩ නගර සභාව | සියලු හිමිකම් ඇවිරිණි
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

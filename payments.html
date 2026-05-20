@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>අන්තර් ජාල ගෙවීම්</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body data-page="payments">
+
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container-xxl">
+      <div class="page-hero-box reveal">
+        <span class="section-mini">Online Payments</span>
+        <h1>අන්තර් ජාල ගෙවීම්</h1>
+        <p>නගර සභා ගාස්තු, බදු සහ වෙනත් ගෙවීම් අන්තර්ජාලය ඔස්සේ සිදුකරන්න.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-space">
+    <div class="container-xxl">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="payment-info-card reveal">
+            <span class="section-mini">Payment Services</span>
+            <h2>ඉක්මන් හා ආරක්ෂිත ගෙවීම්</h2>
+            <p>ඔන්ලයින් පද්ධතිය හරහා ඔබට නගර සභා බදු, වෙළඳ බලපත්‍ර ගාස්තු සහ වෙනත් ගෙවීම් සිදු කළ හැක.</p>
+
+            <div class="payment-list">
+              <div><i class="fa-solid fa-check"></i> Assessment Tax</div>
+              <div><i class="fa-solid fa-check"></i> Trade License Fees</div>
+              <div><i class="fa-solid fa-check"></i> Service Charges</div>
+              <div><i class="fa-solid fa-check"></i> Other Municipal Payments</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="payment-form-card reveal">
+            <h3>ගෙවීම් පෝරමය</h3>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">සම්පූර්ණ නම</label>
+                <input type="text" class="form-control premium-input" placeholder="නම ඇතුලත් කරන්න">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">ගෙවීම් වර්ගය</label>
+                <select class="form-select premium-input">
+                  <option>Assessment Tax</option>
+                  <option>Trade License</option>
+                  <option>Service Fee</option>
+                  <option>Other Payment</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">යොමු අංකය</label>
+                <input type="text" class="form-control premium-input" placeholder="Reference No">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">මුදල</label>
+                <input type="number" class="form-control premium-input" placeholder="Amount">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">සටහන</label>
+                <textarea class="form-control premium-input" rows="4" placeholder="සටහනක් ඇතුලත් කරන්න"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="premium-submit-btn">
+                  <i class="fa-solid fa-credit-card"></i> Pay Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-4">
+          <div class="info-card reveal">
+            <div class="info-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h4>Secure Payment</h4>
+            <p>ආරක්ෂිත ගෙවීම් පද්ධතියක් හරහා ඔබගේ ගෙවීම් සුරක්ෂිතව සිදු වේ.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="info-card reveal">
+            <div class="info-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h4>Fast Processing</h4>
+            <p>ගෙවීම් තහවුරු කිරීම සහ වාර්තාකරණය කාර්යක්ෂමව ක්‍රියාත්මක වේ.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="info-card reveal">
+            <div class="info-icon"><i class="fa-solid fa-receipt"></i></div>
+            <h4>Instant Receipt</h4>
+            <p>ගෙවීමෙන් පසු ඉක්මන්ව receipt / proof එක ලබාගත හැක.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
