@@ -235,3 +235,17 @@ if (urlParams.get("skipLoader") === "true") {
   runAll();
 });
 
+document.querySelectorAll('.service-title').forEach(title => {
+    title.addEventListener('click', function () {
+        const currentCard = this.closest('.service-card');
+        const isActive = currentCard.classList.contains('active');
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.classList.remove('active');
+        });
+
+        if (!isActive) {
+            currentCard.classList.add('active');
+        }
+    });
+});

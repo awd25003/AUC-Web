@@ -85,20 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </ul>
               </li>
 
-              <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle ${page === "services" ? "active" : ""}" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                  සේවාවන්
-                </a>
-                <ul class="dropdown-menu premium-dropdown">
-                  <li><a class="dropdown-item" href="services.html#cemetery">සුසාන භූමි සේවාව</a></li>
-                  <li><a class="dropdown-item" href="services.html#ground-booking">ක්‍රීඩා පිටිය වෙන්කර ගැනීම</a></li>
-                  <li><a class="dropdown-item" href="services.html#gully-bowser">ගලී බවුසර් සේවාව</a></li>
-                  <li><a class="dropdown-item" href="services.html#water-bowser">වතුර බවුසර් සේවාව</a></li>
-                  <li><a class="dropdown-item" href="services.html#backhoe">බැකෝ සේවාව</a></li>
-                  <li><a class="dropdown-item" href="services.html">සියලු සේවාවන්</a></li>
-                </ul>
-              </li>
-
+              <li class="nav-item"><a class="nav-link ${page === "services" ? "active" : ""}" href="services.html" > සේවාවන්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "news" ? "active" : ""}" href="news.html">පුවත්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "payments" ? "active" : ""}" href="payments.html">අන්තර් ජාල ගෙවීම්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "gallery" ? "active" : ""}" href="gallery.html">තොරතුරු පනත</a></li>
