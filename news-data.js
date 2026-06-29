@@ -1,8 +1,40 @@
-const newsData = [
+window.newsData =  [
+ {
+    id:7,
+    title: "සුබසාධක සමිතිය",
+    date: "2026-06-22",
+    category: "Update",
+    image: "hero2.jpg",
+    short: "ජනතාවට පහසු සේවාවක් ලබාදීම සඳහා අභ්‍යන්තර සේවා කවුන්ටරය නවීකරණය කරන ලදී.",
+    content: `
+      <p>මෙය full article content එකයි.</p>
+      <p>මෙහි විස්තර වැඩි කරලා දාන්න පුළුවන්.</p>
+    `
+  },
+
+
+
+
   {
-    id: 1,
+    id: 6,
+    title: "අවුරුදු උත්සවය",
+    date: "2026-06-01",
+    category: "Update",
+    image: "hero2.jpg",
+    short: "ජනතාවට පහසු සේවාවක් ලබාදීම සඳහා අභ්‍යන්තර සේවා කවුන්ටරය නවීකරණය කරන ලදී.",
+    content: `
+      <p>මෙය full article content එකයි.</p>
+      <p>මෙහි විස්තර වැඩි කරලා දාන්න පුළුවන්.</p>
+    `
+  },
+
+
+
+
+  {
+    id: 5,
     title: "පොදු සේවා කවුන්ටරය නවීකරණය කරන ලදී",
-    date: "2026-03-01",
+    date: "2026-05-01",
     category: "Update",
     image: "hero2.jpg",
     short: "ජනතාවට පහසු සේවාවක් ලබාදීම සඳහා අභ්‍යන්තර සේවා කවුන්ටරය නවීකරණය කරන ලදී.",
@@ -12,9 +44,9 @@ const newsData = [
     `
   },
   {
-    id: 2,
+    id: 4,
     title: "ගෙවීම් කවුන්ටර වේලාවන් යාවත්කාලීන කරන ලදී",
-    date: "2026-02-22",
+    date: "2026-04-22",
     category: "Notice",
     image: "hero3.jpg",
     short: "පුරවැසි පහසුව සඳහා සේවා කවුන්ටර වේලාවන් යාවත්කාලීන කර ඇත.",
@@ -25,7 +57,7 @@ const newsData = [
   {
     id: 3,
     title: "හෙළ බොජුන් හල",
-    date: "2026-02-22",
+    date: "2026-03-22",
     category: "Notice",
     image: "hero3.jpg",
     short: "විවෘත කරන ලදී",
@@ -35,9 +67,9 @@ const newsData = [
   },
 
   {
-    id: 4,
-    title: "ඩෙංගු මර්දන වැඩසටහන",
-    date: "2026-06-22",
+    id: 2,
+    title: " මැලේරියා මර්දන වැඩසටහන",
+    date: "2026-02-22",
     category: "Notice",
     image: "hero3.jpg",
     short: "පිරිසිදු කරන ලදි",
@@ -47,9 +79,9 @@ const newsData = [
   },
 
    {
-    id: 5,
-    title: "ඩෙංගු මර්දන වැඩසටහන222",
-    date: "2026-06-22",
+    id: 1,
+    title: "ඩෙංගු මර්දන වැඩසටහන",
+    date: "2026-01-22",
     category: "Notice",
     image: "hero3.jpg",
     short: "පිරිසිදු කරන ලදි",

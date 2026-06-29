@@ -97,45 +97,13 @@
 </button>
 
 <!-- SCRIPTS -->
-<script src="news-data.js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const params = new URLSearchParams(window.location.search);
-  const id = Number(params.get("id"));
-
-  const news = newsData.find(n => n.id === id);
-
-  if (news) {
-    document.getElementById("news-title").innerText = news.title;
-    document.getElementById("news-content").innerHTML = news.content;
-  }
-
-  // Build pagination dynamically from newsData — auto-grows as you add more
-  const pagination = document.getElementById("pagination");
-  pagination.innerHTML = ""; // clear any hardcoded items
-
-  newsData.forEach(item => {
-    const li = document.createElement("li");
-    li.className = "page-item";
-
-    const a = document.createElement("a");
-    a.className = "page-link" + (item.id === id ? " active" : "");
-    a.href = `news-details.html?id=${item.id}`;
-    a.innerText = item.id;
-
-    li.appendChild(a);
-    pagination.appendChild(li);
-  });
-
-});
-</script>
 
 <script src="header.js"></script>
 <script src="footer.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="news-data.js"></script>
+<script src="news-details.js"></script>
 <script src="js.js"></script>
 
 

@@ -15,129 +15,47 @@
 
   <div id="site-header"></div>
 
-  <section class="page-hero">
-    <div class="container-xxl">
-      <div class="page-hero-box reveal">
-        <span class="section-mini">Latest News</span>
-        <h1>පුවත්</h1>
-        <p>නවතම නිවේදන, සංවර්ධන වැඩසටහන් සහ නගර සභා පුවත්.</p>
-      </div>
+<section class="page-hero">
+  <div class="container-xxl">
+    <div class="page-hero-box reveal">
+      <span class="section-mini">Latest News</span>
+      <h1>පුවත්</h1>
+      <p>නවතම නිවේදන, සංවර්ධන වැඩසටහන් සහ නගර සභා පුවත්.</p>
     </div>
-  </section>
-
-  <section class="section-space">
-    <div class="container-xxl">
-
-      <div class="news-strip-wrap reveal mb-5">
-        <div class="section-title mb-3">
-          <span class="section-mini">Running News</span>
-          <h2>පුවත්</h2>
-        </div>
-
-        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3200">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row g-3">
-                <div class="row g-4" id="newsContainer">
-
-  <!-- NEWS ITEMS (same as your cards but add news-item class) -->
-
-  <div class="col-lg-4 col-md-6 news-item">
-    <article class="news-card reveal">
-      <div class="news-image">
-        <img src="hero2.jpg" alt="news">
-        <span class="news-badge">Update</span>
-      </div>
-      <div class="news-content">
-        <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-03-01</div>
-        <h4>පොදු සේවා කවුන්ටරය නවීකරණය කරන ලදී</h4>
-        <p>ජනතාවට පහසු සේවාවක් ලබාදීම සඳහා අභ්‍යන්තර සේවා කවුන්ටරය නවීකරණය කරන ලදී.</p>
-        <a href="news-details.html?id=1" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
   </div>
+</section>
 
-  <div class="col-lg-4 col-md-6 news-item">
-    <article class="news-card reveal">
-      <div class="news-image">
-        <img src="hero3.jpg" alt="news">
-        <span class="news-badge">Notice</span>
-      </div>
-      <div class="news-content">
-        <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-22</div>
-        <h4>ගෙවීම් කවුන්ටර වේලාවන් යාවත්කාලීන කරන ලදී</h4>
-        <p>පුරවැසි පහසුව සඳහා සේවා කවුන්ටර වේලාවන් යාවත්කාලීන කර ඇත.</p>
-        <a href="news-details.html?id=2" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
+<section class="section-space">
+  <div class="container-xxl">
+
+    <!-- NEWS GRID (JS will render here) -->
+    <div class="row g-4" id="newsContainer"></div>
+
+    <!-- PAGINATION -->
+    <div class="pagination-wrap mt-5">
+      <button id="prevBtn">Prev</button>
+      <span id="pageNumbers"></span>
+      <button id="nextBtn">Next</button>
+    </div>
+
   </div>
+</section>
 
-<div class="col-lg-4 col-md-6 news-item">
-    <article class="news-card reveal">
-      <div class="news-image">
-        <img src="hero3.jpg" alt="news">
-        <span class="news-badge">Notice</span>
-      </div>
-      <div class="news-content">
-        <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-22</div>
-        <h4>හෙළ බොජුන් හල</h4>
-        <p>විවෘත කරන ලදී</p>
-        <a href="news-details.html?id=3" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
-  </div>
-
-  <div class="col-lg-4 col-md-6 news-item">
-    <article class="news-card reveal">
-      <div class="news-image">
-        <img src="hero3.jpg" alt="news">
-        <span class="news-badge">Notice</span>
-      </div>
-      <div class="news-content">
-        <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-06-22</div>
-        <h4>ඩෙංගු මර්දන වැඩසටහන</h4>
-        <p>පිරිසිදු කරන </p>
-        <a href="news-details.html?id=4" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
-  </div>
-
- <div class="col-lg-4 col-md-6 news-item">
-    <article class="news-card reveal">
-      <div class="news-image">
-        <img src="hero3.jpg" alt="news">
-        <span class="news-badge">Notice</span>
-      </div>
-      <div class="news-content">
-        <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-06-22</div>
-        <h4>ඩෙංගු මර්දන වැඩසටහන2222</h4>
-        <p>පිරිසිදු කරන </p>
-        <a href="news-details.html?id=5" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </article>
-  </div>
-
-
-
-</div>
-
-<!-- PAGINATION -->
-<div class="row g-4" id="newsContainer"></div>
-
-<div class="pagination-wrap text-center mt-5">
-  <button id="prevBtn">Prev</button>
-  <span id="pageNumbers"></span>
-  <button id="nextBtn">Next</button>
-</div>
+<div id="site-footer"></div>
+<button id="backToTop" class="back-to-top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
               
 
   <div id="site-footer"></div>
   <button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
-  <script src="header.js"></script>
-  <script src="footer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="news-data.js"></script>
-  <script src="js.js"></script>
+  <!-- SCRIPTS -->
+<script src="header.js"></script>
+<script src="footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="news-data.js"></script>
+<script src="news.js"></script>  <!-- ← මේ line එක add කරන්න -->
+<script src="js.js"></script>
 </body>
 </html>
