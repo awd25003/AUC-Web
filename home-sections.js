@@ -387,7 +387,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="uploads/news/test.jpg" alt="news1">
+                <img src="uploads/news/2026 jan/1.jpg" alt="news1">
                 <span class="news-badge">Featured</span>
               </div>
               <div class="news-content">
