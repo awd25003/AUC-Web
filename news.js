@@ -20,16 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const itemsPerPage = 6;
   let currentPage = 1;
 
-  // Sort latest first
   const sortedNews = [...data].sort((a, b) =>
     new Date(b.date) - new Date(a.date)
   );
 
   const totalPages = Math.max(1, Math.ceil(sortedNews.length / itemsPerPage));
 
-  // ----------------------------
-  // RENDER PAGE
-  // ----------------------------
   function renderPage(page) {
     currentPage = page;
     container.innerHTML = "";
@@ -54,7 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
       col.innerHTML = `
         <article class="news-card reveal">
           <div class="news-image">
-            <img src="${news.image}" alt="${news.title}">
+            <img src="${(news.images && news.images[0]) || news.image || 'uploads/news/default.jpg'}" 
+                 alt="${news.title}"
+                 onerror="this.onerror=null;this.src='uploads/news/default.jpg';">
             <span class="news-badge">${news.category || ''}</span>
           </div>
           <div class="news-content">
@@ -76,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateButtons();
     renderPagination();
 
-    // Re-trigger reveal animation (js.js uses .active class)
     setTimeout(() => {
       document.querySelectorAll("#newsContainer .reveal").forEach(el => {
         el.classList.add("active");
@@ -86,9 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // ----------------------------
-  // PAGINATION BUTTONS
-  // ----------------------------
   function renderPagination() {
     pageNumbers.innerHTML = "";
 
@@ -107,9 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.disabled = currentPage === totalPages;
   }
 
-  // ----------------------------
-  // EVENTS
-  // ----------------------------
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) renderPage(currentPage - 1);
   });
@@ -118,9 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentPage < totalPages) renderPage(currentPage + 1);
   });
 
-  // ----------------------------
-  // INIT
-  // ----------------------------
   renderPage(1);
 
 });

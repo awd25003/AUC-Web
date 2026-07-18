@@ -2062,3 +2062,32 @@ button[aria-expanded="true"] .info-arrow{
     transform: translateY(0);
   }
 }
+
+.gallery-arrow {
+  position: absolute;
+  bottom: 12px;               /* top:50% වෙනුවට - image එකේ පහළ කෙළවරට */
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.gallery-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-arrow-left {
+  left: 12px;
+}
+
+.gallery-arrow-right {
+  right: 12px;
+}

@@ -80,14 +80,27 @@ window.newsData =  [
   },
 
    {
-    id: 1,
-    title: "නව වසරේ රාජකාරී කටයුතු උත්සවශීලීව ආරම්භ විය",
-    date: "2026-01-01",
-    category: "Notice",
-    image: "uploads/news/test.jpg" ,
-    short: "පිරිසිදු කරන ලදි",
-    content: `
-      <p>නව වසරේ රාජකාරී කටයුතු ආශීර්වාද මධ්‍යයේ ආරම්භ කරන ලදී.</p>
-    `
-  },
+  id: 1,
+  title: "නව වසරේ රාජකාරී කටයුතු උත්සවශීලීව ආරම්භ විය",
+  date: "2026-01-01",
+  category: "Notice",
+  images: [
+    "uploads/news/2026 jan/1.jpg",
+    "uploads/news/2026 jan/2.jpg",
+    "uploads/news/2026 jan/3.jpg",
+    "uploads/news/2026 jan/4.jpg",
+    "uploads/news/2026 jan/5.jpg",
+    "uploads/news/2026 jan/6.jpg",
+    "uploads/news/2026 jan/7.jpg",
+    "uploads/news/2026 jan/8.jpg",
+    "uploads/news/2026 jan/9.jpg",
+    "uploads/news/2026 jan/10.jpg",
+    "uploads/news/2026 jan/11.jpg",
+    "uploads/news/2026 jan/12.jpg"
+  ],
+  short: "පිරිසිදු කරන ලදි",
+  content: `
+    <p>නව වසරේ රාජකාරී කටයුතු ආශීර්වාද මධ්‍යයේ ආරම්භ කරන ලදී.</p>
+  `
+},
 ];

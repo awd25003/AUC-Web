@@ -34,10 +34,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const total = sorted.length;
   const currentNum = index + 1; // 1-based
 
-  // ----------------------------
+ // ----------------------------
   // 3. RENDER MAIN CONTENT
   // ----------------------------
   titleEl.innerText = currentNews.title;
+
+  const imagesArr = currentNews.images && currentNews.images.length
+    ? currentNews.images
+    : [currentNews.image || 'uploads/news/default.jpg'];
+
+  let currentImgIndex = 0;
+
+  const galleryHtml = `
+    <div class="news-gallery mb-3">
+      <div class="main-image mb-2" style="position:relative;">
+        ${imagesArr.length > 1 ? `
+        <button type="button" class="gallery-arrow gallery-arrow-left" aria-label="Previous image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>` : ''}
+
+        <img id="mainNewsImage" src="${imagesArr[0]}" alt="${currentNews.title}"
+             style="width:100%; border-radius:10px; display:block;"
+             onerror="this.onerror=null;this.src='uploads/news/default.jpg';">
+
+        ${imagesArr.length > 1 ? `
+        <button type="button" class="gallery-arrow gallery-arrow-right" aria-label="Next image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>` : ''}
+      </div>
+      ${imagesArr.length > 1 ? `
+      <div class="thumb-strip d-flex gap-2 flex-wrap">
+        ${imagesArr.map((img, i) => `
+          <img src="${img}" 
+               class="thumb-img${i === 0 ? ' active' : ''}"
+               data-index="${i}"
+               style="width:80px; height:60px; object-fit:cover; border-radius:6px; cursor:pointer; border:2px solid ${i === 0 ? '#0d6efd' : 'transparent'};"
+               onerror="this.onerror=null;this.src='uploads/news/default.jpg';">
+        `).join('')}
+      </div>` : ''}
+    </div>
+  `;
 
   contentEl.innerHTML = `
     <div class="news-meta mb-3">
@@ -48,15 +84,57 @@ document.addEventListener("DOMContentLoaded", () => {
       </span>
     </div>
 
-    <div class="news-image mb-3">
-      <img src="${currentNews.image || 'default.jpg'}" alt="${currentNews.title}" style="width:100%; border-radius:10px;">
-    </div>
+    ${galleryHtml}
 
     <div class="news-body">
       ${currentNews.content || ''}
     </div>
   `;
 
+  // ----------------------------
+  // GALLERY NAVIGATION LOGIC
+  // ----------------------------
+  const mainImgEl = document.getElementById('mainNewsImage');
+  const thumbEls = contentEl.querySelectorAll('.thumb-img');
+  const leftArrow = contentEl.querySelector('.gallery-arrow-left');
+  const rightArrow = contentEl.querySelector('.gallery-arrow-right');
+
+  function showImage(idx) {
+    if (idx < 0) idx = imagesArr.length - 1;
+    if (idx >= imagesArr.length) idx = 0;
+    currentImgIndex = idx;
+
+    mainImgEl.src = imagesArr[currentImgIndex];
+
+    thumbEls.forEach(t => {
+      const isActive = Number(t.dataset.index) === currentImgIndex;
+      t.style.borderColor = isActive ? '#0d6efd' : 'transparent';
+    });
+  }
+
+  thumbEls.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      showImage(Number(thumb.dataset.index));
+    });
+  });
+
+  if (leftArrow) {
+    leftArrow.addEventListener('click', () => showImage(currentImgIndex - 1));
+  }
+  if (rightArrow) {
+    rightArrow.addEventListener('click', () => showImage(currentImgIndex + 1));
+  }
+
+  // Keyboard arrow keys support
+  document.addEventListener('keydown', (e) => {
+    if (imagesArr.length <= 1) return;
+    if (e.key === 'ArrowLeft') showImage(currentImgIndex - 1);
+    if (e.key === 'ArrowRight') showImage(currentImgIndex + 1);
+  });
+
+  // ----------------------------
+
+  // ----------------------------
   // ----------------------------
   // 4. RELATED NEWS SIDEBAR
   // ----------------------------
