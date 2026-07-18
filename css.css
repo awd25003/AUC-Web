@@ -2091,3 +2091,49 @@ button[aria-expanded="true"] .info-arrow{
 .gallery-arrow-right {
   right: 12px;
 }
+
+.premium-table-wrap {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  overflow: hidden;
+  border: 1px solid #eef0f2;
+}
+
+.premium-table {
+  margin-bottom: 0;
+}
+
+.premium-table thead th {
+  background: #0d3b66;
+  color: #fff;
+  font-weight: 600;
+  padding: 16px 20px;
+  border: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.premium-table tbody td {
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  border-bottom: 1px solid #f0f2f4;
+  vertical-align: middle;
+}
+
+.premium-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.premium-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+@media (max-width: 768px) {
+  .premium-table thead th,
+  .premium-table tbody td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
