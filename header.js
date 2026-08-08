@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="brandbar">
           <div class="brand-left">
             <div class="brand-logos">
-              <img src="img/logo2.jpg" alt="Logo 1" class="brand-logo">
-              <img src="img/logo.png" alt="Logo 2" class="brand-logo">
-            </div>
+    <img src="img/logo2.jpg" alt="Logo 1" class="brand-logo">
+    <img src="img/281961.png" alt="Logo 2" class="brand-logo brand-logo-small-padding">
+</div>
 
             <div class="brand-text">
              <p>ආයුබෝවන්</p>

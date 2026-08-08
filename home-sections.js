@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <div class="flash-news-track-wrap">
             <div class="flash-news-track">
-              <a href="payments.html" class="flash-news-item">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                අම්බලන්ගොඩ නගර සභාවේ නව ඔන්ලයින් ගෙවීම් සේවාව දැන් ක්‍රියාත්මකයි
+                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
               <a href="downloads.html" class="flash-news-item">
@@ -23,24 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="services.html" class="flash-news-item">
+              <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                ගලී බවුසර්, වතුර බවුසර් සහ බැකෝ සේවාවන් පිළිබඳ විස්තර දැන් වෙබ් අඩවියේ ඇත
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
               </a>
 
-              <a href="payments.html" class="flash-news-item" aria-hidden="true">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                අම්බලන්ගොඩ නගර සභාවේ නව ඔන්ලයින් ගෙවීම් සේවාව දැන් ක්‍රියාත්මකයි
+                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
-              <a href="downloads.html" class="flash-news-item" aria-hidden="true">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">Notice</span>
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="services.html" class="flash-news-item" aria-hidden="true">
+              <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                ගලී බවුසර්, වතුර බවුසර් සහ බැකෝ සේවාවන් පිළිබඳ විස්තර දැන් වෙබ් අඩවියේ ඇත
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
+              </a>
+
+              <a href="news-details.html?id=2" class="flash-news-item">
+                <span class="news-chip">Service</span>
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
               </a>
             </div>
           </div>
@@ -239,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
             <div class="service-image-card reveal">
-              <img src="img/hero1.jpg" alt="Cemetery">
+              <img src="" alt="Cemetery">
               <div class="service-body">
                 <h4>ආදාහනාගාර වෙන් කිරීම</h4>
                 <p>ආදාහනාගාර සහ සුසාන භූමි වෙන්කිරීම්, නඩත්තු සහ සම්බන්ධ පරිපාලන සේවාවන්.</p>
@@ -402,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="img/hero2.jpg" alt="news2">
+                <img src="" alt="news2">
                 <span class="news-badge">Update</span>
               </div>
               <div class="news-content">
@@ -417,7 +422,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="img/hero3.jpg" alt="news3">
+                <img src="" alt="news3">
                 <span class="news-badge">Notice</span>
               </div>
               <div class="news-content">

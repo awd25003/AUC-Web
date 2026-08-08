@@ -170,7 +170,9 @@ textarea{
   box-shadow:0 10px 24px rgba(0,0,0,.18);
   border:1px solid rgba(255,255,255,.35);
 }
-
+.brand-logo-small-padding{
+    padding: 0px;   /* Adjust as needed */
+}
 .brand-heading,
 .brand-text h1{
   margin:8px 0 6px;
