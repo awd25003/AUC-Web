@@ -330,8 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="news-image">
                 <img src="uploads/news/hela/hela 8.jpeg" alt="news2">
                 <span class="news-badge">News</span>
-                <img src="" alt="news2">
-                <span class="news-badge">Update</span>
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-16</div>
@@ -347,8 +345,6 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="news-image">
                 <img src="uploads/news/kite/kite 8.jpeg" alt="news3">
                 <span class="news-badge">New</span>
-                <img src="" alt="news3">
-                <span class="news-badge">Notice</span>
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-08-07</div>
