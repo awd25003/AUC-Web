@@ -326,14 +326,6 @@ textarea{
   border:none;
   padding:8px;
   box-shadow:none !important;
-  background:transparent !important;   /* අලුතින් දාන්න */
-  -webkit-appearance:none;              /* iOS Safari fix */
-  appearance:none;
-  outline:none !important;              /* focus වෙද්දි gray ring එකක් ආවොත් */
-}
-.premium-toggler:focus{
-  box-shadow:none !important;
-  outline:none !important;
 }
 
 .premium-toggler span{
