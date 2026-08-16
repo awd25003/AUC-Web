@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="brandbar">
           <div class="brand-left">
             <div class="brand-logos">
-              <img src="img/logo2.jpg" alt="Logo 1" class="brand-logo">
-              <img src="img/logo.png" alt="Logo 2" class="brand-logo">
-            </div>
+    <img src="img/logo2.jpg" alt="Logo 1" class="brand-logo">
+    <img src="img/281961.png" alt="Logo 2" class="brand-logo brand-logo-small-padding">
+</div>
 
             <div class="brand-text">
              <p>ආයුබෝවන්</p>
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
               <li class="nav-item"><a class="nav-link ${page === "services" ? "active" : ""}" href="services.html" > සේවාවන්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "news" ? "active" : ""}" href="news.html">පුවත්</a></li>
-              <li class="nav-item"><a class="nav-link ${page === "payments" ? "active" : ""}" href="payments.html">අන්තර්ජාල ගෙවීම්</a></li>
+            <li class="nav-item"><a class="nav-link ${page === "payments" ? "active" : ""}" href="">අන්තර්ජාල ගෙවීම්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "information" ? "active" : ""}" href="information.html">තොරතුරු පනත</a></li>
               <li class="nav-item"><a class="nav-link ${page === "downloads" ? "active" : ""}" href="downloads.html">බාගත කිරීම්</a></li>
               <li class="nav-item"><a class="nav-link ${page === "contact" ? "active" : ""}" href="contact.html">සම්බන්ධවන්න</a></li>

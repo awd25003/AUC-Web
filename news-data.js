@@ -1,10 +1,53 @@
 window.newsData =  [
+ {
+    id: 3,
+    title: " KITE FESTIVAL 2026",
+    date: "2026-08-07",
+    category: "New",
+   images: [
+    "uploads/news/kite/kite 1.jpeg",
+    "uploads/news/kite/kite 2.jpeg",
+    "uploads/news/kite/kite 3.jpeg",
+    "uploads/news/kite/kite 4.jpeg",
+    "uploads/news/kite/kite 5.jpeg",
+    "uploads/news/kite/kite 6.jpeg",
+    "uploads/news/kite/kite 7.jpeg",
+    "uploads/news/kite/kite 8.jpeg",
+  "uploads/news/kite/kite 9.jpeg",
+    "uploads/news/kite/kite 10.jpeg",
+    "uploads/news/kite/kite 11.jpeg",
+    "uploads/news/kite/kite 12.jpeg",
+    "uploads/news/kite/kite 13.jpeg",
+    "uploads/news/kite/kite 14.jpeg",
+  "uploads/news/kite/kite 15.jpeg",
+    "uploads/news/kite/kite 16.jpeg",
+    "uploads/news/kite/kite 17.jpeg",
+    "uploads/news/kite/kite 18.jpeg"
+  ],
+    short: "",
+    content: `
+      <p>අම්බලන්ගොඩ නගර සභා පෙරපාසල් මගින් 
+      සංවිධානය කළ සරුංගල් සැණකෙළිය දුවා දරුවන් වැඩි පිරිසකගේ සහභාගිත්වයෙන් පැවැත්විණ. </p>
+    `
+  },
+
   {
     id: 2,
     title: " හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කිරීම",
     date: "2026-02-19",
     category: "Notice",
-    image: "hero3.jpg",
+    images: [
+    "uploads/news/hela/hela 1.jpeg",
+    "uploads/news/hela/hela 2.jpeg",
+    "uploads/news/hela/hela 3.jpeg",
+    "uploads/news/hela/hela 4.jpeg",
+    "uploads/news/hela/hela 5.jpeg",
+    "uploads/news/hela/hela 6.jpeg",
+    "uploads/news/hela/hela 7.jpeg",
+    "uploads/news/hela/hela 8.jpeg",
+  "uploads/news/hela/hela 9.jpeg",
+    "uploads/news/hela/hela 10.jpeg"
+  ],
     short: "",
     content: `
       <p>අද දින අම්බලන්ගොඩ හෙළ බොජුන්හල ගරු අමාත්‍ය නලින් හේවගේ මැතිතුමාගේ ප්‍රධානත්වයෙන්

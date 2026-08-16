@@ -170,7 +170,9 @@ textarea{
   box-shadow:0 10px 24px rgba(0,0,0,.18);
   border:1px solid rgba(255,255,255,.35);
 }
-
+.brand-logo-small-padding{
+    padding: 0px;   /* Adjust as needed */
+}
 .brand-heading,
 .brand-text h1{
   margin:8px 0 6px;
@@ -678,7 +680,7 @@ button[aria-expanded="true"] .info-arrow{
 .stat-card{
   background:#fff;
   border-radius:22px;
-  padding:24px 22px;
+  padding:12px 12px;
   display:flex;
   gap:16px;
   align-items:center;
@@ -1228,7 +1230,7 @@ button[aria-expanded="true"] .info-arrow{
 
 /* feature strip */
 .feature-strip{
-  padding:80px 0;
+  padding:20px 0;
   background:linear-gradient(135deg,var(--primary-dark),var(--primary),var(--secondary));
   color:#fff;
 }
@@ -1575,7 +1577,7 @@ button[aria-expanded="true"] .info-arrow{
 .footer{
   background:#024d12a0;
   color:#fff;
-  padding-top:80px;
+  padding-top:20px;
 }
 
 .footer-box{
@@ -1694,7 +1696,7 @@ button[aria-expanded="true"] .info-arrow{
 
 /* responsive */
 @media (max-width:1199.98px){
-  .brandbar{gap:18px;}
+  .brandbar{gap:8px;}
   .brand-right{width:100%; justify-content:flex-start;}
   .nav-search{margin:16px 0 6px; min-width:100%;}
   .nav-brand-mobile{display:block;}

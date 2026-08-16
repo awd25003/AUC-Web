@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <div class="flash-news-track-wrap">
             <div class="flash-news-track">
-              <a href="payments.html" class="flash-news-item">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                අම්බලන්ගොඩ නගර සභාවේ නව ඔන්ලයින් ගෙවීම් සේවාව දැන් ක්‍රියාත්මකයි
+                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
               <a href="downloads.html" class="flash-news-item">
@@ -23,24 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="services.html" class="flash-news-item">
+              <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                ගලී බවුසර්, වතුර බවුසර් සහ බැකෝ සේවාවන් පිළිබඳ විස්තර දැන් වෙබ් අඩවියේ ඇත
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
               </a>
 
-              <a href="payments.html" class="flash-news-item" aria-hidden="true">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                අම්බලන්ගොඩ නගර සභාවේ නව ඔන්ලයින් ගෙවීම් සේවාව දැන් ක්‍රියාත්මකයි
+                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
-              <a href="downloads.html" class="flash-news-item" aria-hidden="true">
+              <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">Notice</span>
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="services.html" class="flash-news-item" aria-hidden="true">
+              <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                ගලී බවුසර්, වතුර බවුසර් සහ බැකෝ සේවාවන් පිළිබඳ විස්තර දැන් වෙබ් අඩවියේ ඇත
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
+              </a>
+
+              <a href="news-details.html?id=2" class="flash-news-item">
+                <span class="news-chip">Service</span>
+                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
               </a>
             </div>
           </div>
@@ -239,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
             <div class="service-image-card reveal">
-              <img src="img/hero1.jpg" alt="Cemetery">
+              <img src="" alt="Cemetery">
               <div class="service-body">
                 <h4>ආදාහනාගාර වෙන් කිරීම</h4>
                 <p>ආදාහනාගාර සහ සුසාන භූමි වෙන්කිරීම්, නඩත්තු සහ සම්බන්ධ පරිපාලන සේවාවන්.</p>
@@ -302,99 +307,20 @@ document.addEventListener("DOMContentLoaded", function () {
           <h2>නවතම පුවත් සහ නිවේදන</h2>
         </div>
 
-        <div class="news-strip-wrap reveal mb-4">
-          <div id="newsMiniCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row g-3">
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero1.jpg" alt="">
-                      <div>
-                        <span>2026-03-01</span>
-                        <h6>ජනතා සේවා කවුන්ටරය නවීකරණය කර ඇත</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero2.jpg" alt="">
-                      <div>
-                        <span>2026-02-20</span>
-                        <h6>ප්‍රජා සහභාගීත්ව වැඩසටහනක් සංවිධානය කරන ලදී</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero3.jpg" alt="">
-                      <div>
-                        <span>2026-02-16</span>
-                        <h6>හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කිරීම</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row g-3">
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero2.jpg" alt="">
-                      <div>
-                        <span>2026-02-25</span>
-                        <h6>මාර්ග සහ නාගරික පහසුකම් නවීකරණය ආරම්භ වේ</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero3.jpg" alt="">
-                      <div>
-                        <span>2026-02-10</span>
-                        <h6>පිරිසිදු නගර වැඩසටහන සඳහා ජනතා සහභාගීත්වය කැඳවයි</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="small-news-card">
-                      <img src="img/hero1.jpg" alt="">
-                      <div>
-                        <span>2026-02-02</span>
-                        <h6>නව ඔන්ලයින් ගෙවීම් පද්ධතිය හඳුන්වා දෙන ලදී</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button class="carousel-control-prev premium-news-control" type="button" data-bs-target="#newsMiniCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next premium-news-control" type="button" data-bs-target="#newsMiniCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
+        
 
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
                 <img src="uploads/news/2026 jan/1.jpg" alt="news1">
-                <span class="news-badge">Featured</span>
+                <span class="news-badge">News</span>
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-03-01</div>
                 <h4>නව වසරේ රාජකාරී කටයුතු උත්සවශීලීව ආරම්භ විය</h4>
                 <p>නව වසරේ රාජකාරී කටයුතු ආශීර්වාද මධ්‍යයේ ආරම්භ කරන ලදී.</p>
-                <a href="news.html" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="news-details.html?id=1" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -402,14 +328,14 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="img/hero2.jpg" alt="news2">
-                <span class="news-badge">Update</span>
+                <img src="uploads/news/hela/hela 8.jpeg" alt="news2">
+                <span class="news-badge">News</span>
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-16</div>
                 <h4>සප්පායම-හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කිරීම</h4>
                 <p>ප්‍රදේශයේ මහජනතාව වෙනුවෙන් දේශීය ආහාර සේවාවක් ජනතා අයිතියට එක් කෙරිණි.</p>
-                <a href="news.html" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="news-details.html?id=2" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -417,14 +343,14 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="img/hero3.jpg" alt="news3">
-                <span class="news-badge">Notice</span>
+                <img src="uploads/news/kite/kite 8.jpeg" alt="news3">
+                <span class="news-badge">New</span>
               </div>
               <div class="news-content">
-                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-02</div>
-                <h4>නව ඔන්ලයින් ගෙවීම් පද්ධතිය හඳුන්වා දෙන ලදී</h4>
-                <p>ගෙවීම් වඩා පහසු කිරීම සඳහා නව ඩිජිටල් පද්ධතියක් ආරම්භ කෙරිණි.</p>
-                <a href="news.html" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-08-07</div>
+                <h4>KITE FESTIVAL 2026</h4>
+                <p>අම්බලන්ගොඩ නගර සභා පෙරපාසල් මගින් සංවිධානය කළ සරුංගල් සැණකෙළීය</p>
+                <a href="news-details.html?id=3" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </article>
           </div>
