@@ -46,10 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
  
     
-          <div class="brand-right">
-            <a href="payments.html" class="header-btn btn-solid">
-              <i class="fa-solid fa-credit-card"></i> Online Payments
-            </a>
+         
             <a href="uploads/pdf/citizen_charter_ambalangoda.pdf" target="_blank" rel="noreferrer" class="header-btn btn-outline-white">
               <i class="fa-solid fa-file-lines"></i> පුරවැසි ප්‍රඥප්තිය
             </a>

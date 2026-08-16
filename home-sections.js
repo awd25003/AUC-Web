@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h1>පුරවැසියන්ට පහසු<br>අන්තර්ජාල සේවාවන්</h1>
                 <p>ගෙවීම්, බාගත කිරීම්, තොරතුරු, නිවේදන සහ තවත් බොහෝ සේවාවන් එකම තැනකින්.</p>
                 <div class="hero-actions">
-                  <a href="payments.html" class="hero-btn hero-primary">Online Payments</a>
+                  
                   <a href="downloads.html" class="hero-btn hero-secondary">Downloads</a>
                 </div>
               </div>
