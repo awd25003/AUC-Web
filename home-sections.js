@@ -328,13 +328,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-<<<<<<< HEAD
                 <img src="uploads/news/hela/hela 8.jpeg" alt="news2">
                 <span class="news-badge">News</span>
-=======
                 <img src="" alt="news2">
                 <span class="news-badge">Update</span>
->>>>>>> 1007dcda5b441928572d2436ebc6427c43bf9c73
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-02-16</div>
@@ -348,13 +345,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-<<<<<<< HEAD
                 <img src="uploads/news/kite/kite 8.jpeg" alt="news3">
                 <span class="news-badge">New</span>
-=======
                 <img src="" alt="news3">
                 <span class="news-badge">Notice</span>
->>>>>>> 1007dcda5b441928572d2436ebc6427c43bf9c73
               </div>
               <div class="news-content">
                 <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-08-07</div>
