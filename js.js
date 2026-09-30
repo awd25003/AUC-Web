@@ -1,14 +1,51 @@
+// ===== skipLoader detect (loader එක මඟහරින්න) =====
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get("skipLoader") === "true") {
+  document.body.setAttribute("data-page", "home-skip");
+}
+
+// ===== Loader ඉවත් කිරීම (DOMContentLoaded ට පිටින්, ඕනෑම වේලාවක ක්‍රියාත්මක වේ) =====
+function hideLoader() {
+  const loader = document.getElementById("siteLoader");
+  if (loader) {
+    loader.classList.add("hide");
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 600);
+  }
+  document.body.classList.remove("loader-active", "has-index-loader");
+}
+
+function handleLoader() {
+  const loader = document.getElementById("siteLoader");
+  const page = document.body.getAttribute("data-page");
+
+  // loader එක skip කරන්නේ නම් හෝ loader එකක් නැත්නම්
+  if (page === "home-skip" || !loader) {
+    hideLoader();
+    return;
+  }
+
+  document.body.classList.add("loader-active");
+
+  if (document.readyState === "complete") {
+    setTimeout(hideLoader, 700);
+  } else {
+    window.addEventListener("load", () => setTimeout(hideLoader, 700));
+  }
+
+  // ආරක්ෂිත උපාය: මොනවා වුණත් තත්පර 4කින් loader එක අයින් වෙනවා
+  setTimeout(hideLoader, 4000);
+}
+
+// loader logic එක ඉක්මනින්ම ආරම්භ කරන්න
+handleLoader();
+
 document.addEventListener("DOMContentLoaded", function () {
   let reveals = [];
   let navbar = null;
   let headerWrap = null;
   let backToTop = null;
-
-  // detect skip loader
-const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.get("skipLoader") === "true") {
-  document.body.setAttribute("data-page", "home-skip");
-}
 
   function refreshDynamicElements() {
     reveals = document.querySelectorAll(".reveal");
@@ -76,7 +113,7 @@ if (urlParams.get("skipLoader") === "true") {
   function startCounters() {
     const counters = document.querySelectorAll("[data-counter]");
 
-    counters.forEach(counter => {
+    counters.forEach((counter) => {
       if (counter.dataset.done === "true") return;
 
       const rect = counter.getBoundingClientRect();
@@ -123,43 +160,46 @@ if (urlParams.get("skipLoader") === "true") {
     });
   }
 
-  // function closeNavbarOnClick() {
-  //   const navCollapse = document.getElementById("mainNav");
-  //   if (!navCollapse || typeof bootstrap === "undefined") return;
-  //
-  //   const navLinks = document.querySelectorAll("#mainNav .nav-link, #mainNav .dropdown-item");
-  //
-  //   navLinks.forEach(link => {
-  //     if (link.dataset.bound === "true") return;
-  //     link.dataset.bound = "true";
-  //
- 
-  //
-  //         bsCollapse.hide();
-  //       }
-  //     });
-  //   });
-  
-  document.querySelectorAll('.dropdown-item, .nav-link:not(.dropdown-toggle)')
-      .forEach(link => {
+  // ===== Navbar link එකක් click කළාම mobile menu එක වැසීම =====
+  function closeNavbarOnClick() {
+    const navCollapse = document.getElementById("mainNav");
+    if (!navCollapse || typeof bootstrap === "undefined") return;
 
-        link.addEventListener('click', () => {
+    document
+      .querySelectorAll("#mainNav .nav-link:not(.dropdown-toggle), #mainNav .dropdown-item")
+      .forEach((link) => {
+        if (link.dataset.bound === "true") return;
+        link.dataset.bound = "true";
 
-          const navbar = document.getElementById('mainNav');
-          const bsCollapse = bootstrap.Collapse.getInstance(navbar);
-
-          if (bsCollapse) {
-            bsCollapse.hide();
-          }
-
-      img.addEventListener("click", function () {
-        lightboxImage.src = this.src;
-        lightboxImage.alt = this.alt;
-        lightboxTitle.textContent = this.dataset.title || this.alt || "සිතියම";
-        imageLightboxModal.show();
+        link.addEventListener("click", () => {
+          const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+          if (bsCollapse) bsCollapse.hide();
+        });
       });
+  }
+
+  // ===== පින්තූර lightbox (සිතියම් ආදිය) =====
+  // පින්තූරයට class="lightbox-img" දාන්න (ඔබේ class එක වෙනස් නම් මෙතන වෙනස් කරන්න)
+  function initLightbox() {
+    const modalEl = document.getElementById("imageLightboxModal");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxTitle = document.getElementById("lightboxTitle");
+    if (!modalEl || !lightboxImage || !lightboxTitle || typeof bootstrap === "undefined") return;
+    if (modalEl.dataset.bound === "true") return;
+    modalEl.dataset.bound = "true";
+
+    const imageLightboxModal = bootstrap.Modal.getOrCreateInstance(modalEl);
+
+    document.addEventListener("click", function (e) {
+      const img = e.target.closest(".lightbox-img");
+      if (!img) return;
+
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightboxTitle.textContent = img.dataset.title || img.alt || "සිතියම";
+      imageLightboxModal.show();
     });
- });
+  }
 
   function initTableSearch() {
     const searchInput = document.getElementById("chairmanSearch");
@@ -172,36 +212,12 @@ if (urlParams.get("skipLoader") === "true") {
     searchInput.addEventListener("keyup", function () {
       const keyword = this.value.toLowerCase().trim();
 
-      rows.forEach(row => {
+      rows.forEach((row) => {
         const text = row.innerText.toLowerCase();
         row.style.display = text.includes(keyword) ? "" : "none";
       });
     });
   }
-
- function handleLoader() {
-  const loader = document.getElementById("siteLoader");
-  const page = document.body.getAttribute("data-page");
-
-  // ❌ home page click (skip loader)
-  if (page === "home-skip") {
-    if (loader) loader.style.display = "none";
-    document.body.classList.remove("loader-active");
-    return;
-  }
-
-  // ✅ normal loader (first load)
-  if (!loader) return;
-
-  document.body.classList.add("loader-active");
-
-  window.addEventListener("load", function () {
-    setTimeout(() => {
-      loader.classList.add("hide");
-      document.body.classList.remove("loader-active");
-    }, 700);
-  });
-}
 
   function runAll() {
     refreshDynamicElements();
@@ -229,24 +245,26 @@ if (urlParams.get("skipLoader") === "true") {
 
   window.addEventListener("resize", handleStickyNav);
 
-  handleLoader();
   updateClock();
   setInterval(updateClock, 1000);
   runAll();
 });
 
-document.querySelectorAll('.service-title').forEach(title => {
-    title.addEventListener('click', function () {
-        const currentCard = this.closest('.service-card');
-        const isActive = currentCard.classList.contains('active');
+// ===== Service cards accordion (dynamic content සඳහා event delegation) =====
+document.addEventListener("click", function (e) {
+  const title = e.target.closest(".service-title");
+  if (!title) return;
 
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.classList.remove('active');
-        });
+  const currentCard = title.closest(".service-card");
+  if (!currentCard) return;
 
-        if (!isActive) {
-            currentCard.classList.add('active');
-        }
-    });
+  const isActive = currentCard.classList.contains("active");
+
+  document.querySelectorAll(".service-card").forEach((card) => {
+    card.classList.remove("active");
+  });
+
+  if (!isActive) {
+    currentCard.classList.add("active");
+  }
 });
-
