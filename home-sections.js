@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
           <div class="carousel-item">
-            <img src="img/hero2.jpg" class="d-block w-100 hero-img" alt="Hero 2">
+            <img src="img/hero1 (3).jpg" class="d-block w-100 hero-img" alt="Hero 2">
             <div class="hero-overlay"></div>
             <div class="container-xxl">
               <div class="hero-content">
