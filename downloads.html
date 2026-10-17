@@ -6,10 +6,11 @@
   <title>බාගත කිරීම්</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="pro.css">
 </head>
 <body data-page="downloads">
 
@@ -28,20 +29,31 @@
 <section class="section-space py-5 bg-light">
   <div class="container-xxl">
 
-    <div class="row g-4 mb-4">
-      <!-- Budget Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#budgetTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-file-invoice-dollar fa-3x"></i></div>
-            <h5 class="card-title fw-bold">අයවැය</h5>
-            <p class="card-text text-muted">අයවැය ලේඛන බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="budgetTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+    <ul class="nav nav-pills dl-tabs" id="dlTabs" role="tablist" aria-label="බාගත කිරීම් ප්‍රවර්ග">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-budget" data-bs-toggle="tab" data-bs-target="#pane-budget" type="button" role="tab" aria-controls="pane-budget" aria-selected="true"><i class="fa-solid fa-file-invoice-dollar"></i><span>අයවැය</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-applications" data-bs-toggle="tab" data-bs-target="#pane-applications" type="button" role="tab" aria-controls="pane-applications" aria-selected="false"><i class="fa-solid fa-file-lines"></i><span>බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-licenses" data-bs-toggle="tab" data-bs-target="#pane-licenses" type="button" role="tab" aria-controls="pane-licenses" aria-selected="false"><i class="fa-solid fa-file-word"></i><span>සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-bylaws" data-bs-toggle="tab" data-bs-target="#pane-bylaws" type="button" role="tab" aria-controls="pane-bylaws" aria-selected="false"><i class="fa-solid fa-scale-balanced"></i><span>අතුරු ව්‍යවස්ථා</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-council" data-bs-toggle="tab" data-bs-target="#pane-council" type="button" role="tab" aria-controls="pane-council" aria-selected="false"><i class="fa-solid fa-book-open"></i><span>සභා වාර්තා</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-yearend" data-bs-toggle="tab" data-bs-target="#pane-yearend" type="button" role="tab" aria-controls="pane-yearend" aria-selected="false"><i class="fa-solid fa-calculator"></i><span>වර්ෂ අවසාන ගිණුම්</span></button>
+      </li>
+    </ul>
+
+    <div class="tab-content dl-tab-content">
+      <div class="tab-pane fade show active" id="pane-budget" role="tabpanel" aria-labelledby="tab-budget" tabindex="0">
+        <div class="dl-pane-head"><h5>අයවැය</h5><p>අයවැය ලේඛන බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="budgetTableEl">
@@ -66,22 +78,10 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
-
-      <!-- Applications Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#applicationsTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-file-lines fa-3x"></i></div>
-            <h5 class="card-title fw-bold">බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</h5>
-            <p class="card-text text-muted"> අයදුම්පත් බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="applicationsTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+      <div class="tab-pane fade" id="pane-applications" role="tabpanel" aria-labelledby="tab-applications" tabindex="0">
+        <div class="dl-pane-head"><h5>බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</h5><p>අයදුම්පත් බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="applicationsTableEl">
@@ -141,22 +141,10 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
-
-      <!-- Licenses Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#licensesTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-file-word fa-3x"></i></div>
-            <h5 class="card-title fw-bold">සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</h5>
-            <p class="card-text text-muted">අයදුම්පත් බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="licensesTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+      <div class="tab-pane fade" id="pane-licenses" role="tabpanel" aria-labelledby="tab-licenses" tabindex="0">
+        <div class="dl-pane-head"><h5>සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</h5><p>අයදුම්පත් බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="licensesTableEl">
@@ -216,21 +204,10 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
-      <!-- By-laws Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#bylawsTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-scale-balanced fa-3x"></i></div>
-            <h5 class="card-title fw-bold">අතුරු ව්‍යවස්ථා</h5>
-            <p class="card-text text-muted">අතුරු ව්‍යවස්ථා ලේඛන බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="bylawsTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+      <div class="tab-pane fade" id="pane-bylaws" role="tabpanel" aria-labelledby="tab-bylaws" tabindex="0">
+        <div class="dl-pane-head"><h5>අතුරු ව්‍යවස්ථා</h5><p>අතුරු ව්‍යවස්ථා ලේඛන බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="bylawsTableEl">
@@ -252,22 +229,10 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
-
-      <!-- Council Reports Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#councilReportsTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-book-open fa-3x"></i></div>
-            <h5 class="card-title fw-bold">සභා වාර්තා</h5>
-            <p class="card-text text-muted">සභා වාර්තා ලේඛන බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="councilReportsTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+      <div class="tab-pane fade" id="pane-council" role="tabpanel" aria-labelledby="tab-council" tabindex="0">
+        <div class="dl-pane-head"><h5>සභා වාර්තා</h5><p>සභා වාර්තා ලේඛන බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="councilReportsTableEl">
@@ -289,22 +254,10 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
-
-      <!-- Year-end Accounts Card -->
-      <div class="col-md-4">
-        <div class="card dashboard-card shadow-lg border-0 rounded-4 p-3 text-center hover-scale card-toggle" 
-             data-target="#yearEndAccountsTable">
-          <div class="card-body">
-            <div class="icon-gradient mb-3"><i class="fa-solid fa-calculator fa-3x"></i></div>
-            <h5 class="card-title fw-bold">වර්ෂ අවසාන ගිණුම්</h5>
-            <p class="card-text text-muted">වර්ෂ අවසාන ගිණුම් ලේඛන බාගත කරන්න</p>
-            <span class="click-badge">Click to View</span>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="yearEndAccountsTable">
-          <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
+      <div class="tab-pane fade" id="pane-yearend" role="tabpanel" aria-labelledby="tab-yearend" tabindex="0">
+        <div class="dl-pane-head"><h5>වර්ෂ අවසාන ගිණුම්</h5><p>වර්ෂ අවසාන ගිණුම් ලේඛන බාගත කරන්න</p></div>
+        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="yearEndAccountsTableEl">
@@ -326,7 +279,6 @@
               </table>
             </div>
           </div>
-        </div>
       </div>
     </div>
 
@@ -403,7 +355,7 @@
 
 /* Scrollable area so long lists don't grow the card forever */
 .table-scroll {
-  max-height: 260px;
+  max-height: 460px;
   overflow-y: auto;
 }
 .table-scroll thead th {
@@ -426,6 +378,26 @@
   background: #6f42c1;
 }
 
+/* ===== Download tabs ===== */
+.dl-tabs{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;padding:4px 2px 10px;margin-bottom:6px;scroll-snap-type:x proximity;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.dl-tabs .nav-item{flex:0 0 auto;scroll-snap-align:start}
+.dl-tabs .nav-link{display:flex;align-items:center;gap:10px;white-space:nowrap;height:100%;padding:12px 18px;border-radius:14px;background:#fff;color:var(--primary-dark);font-weight:600;border:1px solid var(--border);box-shadow:0 4px 14px rgba(12,32,65,.06);transition:var(--transition)}
+.dl-tabs .nav-link i{color:var(--secondary);font-size:1.1rem;flex:0 0 auto}
+.dl-tabs .nav-link:hover{border-color:var(--primary);transform:translateY(-2px)}
+.dl-tabs .nav-link.active{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;border-color:transparent;box-shadow:0 10px 24px rgba(15,76,129,.28),inset 0 -3px 0 var(--gold)}
+.dl-tabs .nav-link.active i{color:var(--gold-light)}
+.dl-tab-content{background:#fff;border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:var(--radius-sm);padding:22px;box-shadow:var(--shadow)}
+.dl-pane-head{margin-bottom:14px}
+.dl-pane-head h5{margin:0 0 4px;font-weight:700;color:var(--primary-dark)}
+.dl-pane-head p{margin:0;color:var(--muted)}
+.dl-tab-content .table-card-wrapper{box-shadow:none!important;border:1px solid var(--border-soft)!important}
+@media(min-width:1200px){
+  .dl-tabs{overflow:visible}
+  .dl-tabs .nav-item{flex:1 1 0;min-width:0}
+  .dl-tabs .nav-link{white-space:normal;width:100%;flex-direction:column;justify-content:center;text-align:center;gap:6px;padding:12px 8px;font-size:.92rem;line-height:1.35}
+}
+@media(max-width:575px){.dl-tab-content{padding:14px}.dl-tabs .nav-link{padding:10px 14px;font-size:.92rem}}
+
 .no-results-row td {
   color: #999;
   font-style: italic;
@@ -434,27 +406,6 @@
 </style>
 
 <script>
-const cards = document.querySelectorAll('.card-toggle');
-
-cards.forEach(card => {
-  const target = document.querySelector(card.dataset.target);
-  const badge = card.querySelector('.click-badge');
-
-  card.addEventListener('click', () => {
-    // Close other open tables
-    document.querySelectorAll('.collapse').forEach(c => {
-      if (c !== target) {
-        bootstrap.Collapse.getInstance(c)?.hide();
-        c.previousElementSibling.querySelector('.click-badge')?.classList.remove('active');
-      }
-    });
-
-    // Toggle current table
-    const bsCollapse = new bootstrap.Collapse(target, { toggle: true });
-    badge.classList.toggle('active');
-  });
-});
-
 // Live search filter inside each collapsible table
 document.querySelectorAll('.table-search-input').forEach(input => {
   input.addEventListener('click', (e) => e.stopPropagation());
@@ -495,9 +446,15 @@ document.querySelectorAll('.table-search-input').forEach(input => {
   <div id="site-footer"></div>
   <button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
+  <script src="i18n.js"></script>
   <script src="header.js"></script>
   <script src="footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js.js"></script>
+  <script>
+    document.querySelectorAll('#dlTabs [data-bs-toggle="tab"]').forEach(function (t) {
+      t.addEventListener('shown.bs.tab', function () { t.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' }); });
+    });
+  </script>
 </body>
 </html>

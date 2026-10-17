@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
             <div class="service-image-card reveal">
-              <img src="" alt="Cemetery">
+              <img src="img/uc-ground.jpg" alt="Cemetery" loading="lazy">
               <div class="service-body">
                 <h4>ආදාහනාගාර වෙන් කිරීම</h4>
                 <p>ආදාහනාගාර සහ සුසාන භූමි වෙන්කිරීම්, නඩත්තු සහ සම්බන්ධ පරිපාලන සේවාවන්.</p>
