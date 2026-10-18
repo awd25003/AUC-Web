@@ -34,10 +34,7 @@
         <button class="nav-link active" id="tab-budget" data-bs-toggle="tab" data-bs-target="#pane-budget" type="button" role="tab" aria-controls="pane-budget" aria-selected="true"><i class="fa-solid fa-file-invoice-dollar"></i><span>අයවැය</span></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-applications" data-bs-toggle="tab" data-bs-target="#pane-applications" type="button" role="tab" aria-controls="pane-applications" aria-selected="false"><i class="fa-solid fa-file-lines"></i><span>බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</span></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-licenses" data-bs-toggle="tab" data-bs-target="#pane-licenses" type="button" role="tab" aria-controls="pane-licenses" aria-selected="false"><i class="fa-solid fa-file-word"></i><span>සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</span></button>
+        <button class="nav-link" id="tab-applications" data-bs-toggle="tab" data-bs-target="#pane-applications" type="button" role="tab" aria-controls="pane-applications" aria-selected="false"><i class="fa-solid fa-file-lines"></i><span>අයදුම්පත්</span></button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="tab-bylaws" data-bs-toggle="tab" data-bs-target="#pane-bylaws" type="button" role="tab" aria-controls="pane-bylaws" aria-selected="false"><i class="fa-solid fa-scale-balanced"></i><span>අතුරු ව්‍යවස්ථා</span></button>
@@ -80,129 +77,151 @@
           </div>
       </div>
       <div class="tab-pane fade" id="pane-applications" role="tabpanel" aria-labelledby="tab-applications" tabindex="0">
-        <div class="dl-pane-head"><h5>බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</h5><p>අයදුම්පත් බාගත කරන්න</p></div>
+        <div class="dl-pane-head"><h5>අයදුම්පත්</h5><p>අයදුම්පත් බාගත කරන්න</p></div>
         <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
             <div class="table-search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="applicationsTableEl">
             </div>
             <div class="table-scroll">
-              <table class="table table-hover align-middle text-center mb-0" id="applicationsTableEl">
-                <thead class="table-light text-uppercase">
-                  <tr>
-                    <th>ලේඛනය</th>
-                    <th>බාගත කිරීම</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>වීථි රේඛා/ ගොඩනැගිලි සීමා සහතික </td>
-                    <td><a href="uploads/pdf/Street line.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>නොපවරා ගැනීම් සහතික </td>
-                    <td><a href="uploads/pdf/nopawara.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>හිමිකම් සහතික</td>
-                    <td><a href="uploads/pdf/himikam.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>වරිපනම් අංක සනාථ කිරීම</td>
-                    <td><a href="uploads/pdf/waripanam.pdf" target="_blank" rel="noreferrer"class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-   <tr>
-                    <td>ස්ථිර දැන්වීම් පුවරු ප්‍රදර්ශනය</td>
-                    <td><a href="uploads/pdf/sthira.pdf" target="_blank" rel="noreferrer"class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-  <tr>
-                    <td>තාවකාලික දැන්වීම් පුවරු ප්‍රදර්ශනය</td>
-                    <td><a href="uploads/pdf/thawakalika.pdf" target="_blank" rel="noreferrer"class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-  <tr>
-                    <td>ජල නළ එළීම සඳහා මාර්ග පළුදු කිරීම</td>
-                    <td><a href="uploads/pdf/marga paludu.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-  <tr>
-                    <td>කර්මාන්ත/ව්‍යාපාර බදු ලියාපදිංචිය</td>
-                    <td><a href="uploads/pdf/karmantha.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-
-                    <tr>
-                    <td>වෙළඳ බලපත්‍ර</td>
-                    <td><a href="uploads/pdf/welada.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>පාපැදි බලපත්‍ර</td>
-                    <td><a href="uploads/pdf/wahana.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-      </div>
-      <div class="tab-pane fade" id="pane-licenses" role="tabpanel" aria-labelledby="tab-licenses" tabindex="0">
-        <div class="dl-pane-head"><h5>සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</h5><p>අයදුම්පත් බාගත කරන්න</p></div>
-        <div class="card card-body shadow-sm rounded-4 border-0 table-card-wrapper">
-            <div class="table-search-box">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" class="form-control table-search-input" placeholder="සොයන්න..." data-table="licensesTableEl">
-            </div>
-            <div class="table-scroll">
-              <table class="table table-hover align-middle text-center mb-0" id="licensesTableEl">
-                <thead class="table-light text-uppercase">
-                  <tr>
-                    <th>ලේඛනය</th>
-                   
-                    <th>බාගත කිරීම</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>ගලි බවුසරය</td>
-                    
-                    <td><a href="uploads/pdf/gully.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>ජල බවුසරය</td>
-                    
-                    <td><a href="uploads/pdf/water.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>බැඩ්මින්ටන් ක්‍රීඩාගාරය </td>
-                    <td><a href="uploads/pdf/badminton.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                    <tr>
-                    <td>මහජන ක්‍රීඩාංගණ </td>
-                    <td><a href="uploads/pdf/ground.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  <tr>
-                    <td>ආදාහනාගාර </td>
-                    <td><a href="uploads/pdf/Cemetery.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-   <tr>
-                    <td>නිදහස්භූමි </td>
-                    <td><a href="uploads/pdf/nidahasbumi.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                   <tr>
-                    <td>යන්ත්‍රසූත්‍ර කුලියට ගැනීම </td>
-                    <td><a href="uploads/pdf/yanthra.pdf"  target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                   <tr>
-                    <td>පුටු/කොඩිකණු </td>
-                    <td><a href="uploads/pdf/putu.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-  <tr>
-                    <td>කසළ ඉවත්කර ගැනීම </td>
-                    <td><a href="uploads/pdf/kasala.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-download me-1"></i> Download</a></td>
-                  </tr>
-                  
-
-
-                </tbody>
-              </table>
-            </div>
+          <ul class="dl-list" id="applicationsTableEl">
+            <li class="dl-group"><i class="fa-solid fa-file-lines"></i> බලපත්‍ර/සහතිකපත්‍ර/අවසරපත්‍ර ලබා ගැනීම</li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>වීථි රේඛා/ ගොඩනැගිලි සීමා සහතික</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/Street line.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/Street line.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>නොපවරා ගැනීම් සහතික</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/nopawara.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/nopawara.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>හිමිකම් සහතික</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/himikam.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/himikam.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>වරිපනම් අංක සනාථ කිරීම</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/waripanam.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/waripanam.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>ස්ථිර දැන්වීම් පුවරු ප්‍රදර්ශනය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/sthira.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/sthira.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>තාවකාලික දැන්වීම් පුවරු ප්‍රදර්ශනය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/thawakalika.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/thawakalika.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>ජල නළ එළීම සඳහා මාර්ග පළුදු කිරීම</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/marga paludu.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/marga paludu.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>කර්මාන්ත/ව්‍යාපාර බදු ලියාපදිංචිය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/karmantha.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/karmantha.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>වෙළඳ බලපත්‍ර</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/welada.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/welada.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>පාපැදි බලපත්‍ර</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/wahana.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/wahana.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-group"><i class="fa-solid fa-file-word"></i> සේවාවන් ලබාගැනීම/වෙන්කරවා ගැනීම්</li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>ගලි බවුසරය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/gully.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/gully.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>ජල බවුසරය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/water.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/water.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>බැඩ්මින්ටන් ක්‍රීඩාගාරය</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/badminton.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/badminton.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>මහජන ක්‍රීඩාංගණ</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/ground.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/ground.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>ආදාහනාගාර</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/Cemetery.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/Cemetery.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>නිදහස්භූමි</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/nidahasbumi.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/nidahasbumi.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>යන්ත්‍රසූත්‍ර කුලියට ගැනීම</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/yanthra.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/yanthra.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>පුටු/කොඩිකණු</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/putu.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/putu.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+            <li class="dl-item">
+              <span class="dl-name"><i class="fa-solid fa-file-pdf"></i><span>කසළ ඉවත්කර ගැනීම</span></span>
+              <span class="dl-actions">
+                <a href="uploads/pdf/kasala.pdf" target="_blank" rel="noreferrer" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-eye me-1"></i> බලන්න</a>
+                <a href="uploads/pdf/kasala.pdf" download class="btn btn-success btn-sm"><i class="fa-solid fa-download me-1"></i> බාගත කරන්න</a>
+              </span>
+            </li>
+          </ul>
+        </div>
           </div>
       </div>
       <div class="tab-pane fade" id="pane-bylaws" role="tabpanel" aria-labelledby="tab-bylaws" tabindex="0">
@@ -398,6 +417,20 @@
 }
 @media(max-width:575px){.dl-tab-content{padding:14px}.dl-tabs .nav-link{padding:10px 14px;font-size:.92rem}}
 
+/* ===== Application lists (tabs 2 & 3) ===== */
+.dl-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:10px}
+.dl-item{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 12px;padding:12px 14px;background:#fff;border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:12px;transition:var(--transition)}
+.dl-item:hover{box-shadow:0 8px 20px rgba(12,32,65,.10);transform:translateY(-1px)}
+.dl-name{display:flex;align-items:flex-start;gap:10px;flex:1 1 200px;min-width:0;font-weight:600;color:var(--text);line-height:1.45;overflow-wrap:anywhere}
+.dl-name i{color:var(--secondary);margin-top:4px;flex:0 0 auto}
+.dl-actions{display:flex;gap:8px;flex:0 0 auto}
+.dl-actions .btn{white-space:nowrap}
+.dl-list .table-scroll{max-height:none}
+.dl-group{grid-column:1/-1;margin-top:8px;padding:8px 4px 6px;font-weight:700;color:var(--primary-dark);border-bottom:2px solid var(--gold);display:flex;gap:10px;align-items:center;line-height:1.4}
+.dl-group:first-child{margin-top:0}
+.dl-group i{color:var(--secondary)}
+@media(max-width:575px){.dl-actions{flex:1 1 100%}.dl-actions .btn{flex:1 1 0;padding:.5rem .4rem}}
+
 .no-results-row td {
   color: #999;
   font-style: italic;
@@ -415,25 +448,44 @@ document.querySelectorAll('.table-search-input').forEach(input => {
     const table = document.getElementById(input.dataset.table);
     if (!table) return;
     const query = input.value.trim().toLowerCase();
-    const rows = table.querySelectorAll('tbody tr:not(.no-results-row)');
+    const isList = table.tagName === 'UL';
+    const rows = table.querySelectorAll(isList ? '.dl-item' : 'tbody tr:not(.no-results-row)');
     let visibleCount = 0;
 
     rows.forEach(row => {
-      const text = row.textContent.toLowerCase();
-      const match = text.includes(query);
+      const match = row.textContent.toLowerCase().includes(query);
       row.style.display = match ? '' : 'none';
       if (match) visibleCount++;
     });
+
+    // Hide group headings that have no matching items
+    if (isList) {
+      table.querySelectorAll('.dl-group').forEach(g => {
+        let n = g.nextElementSibling, any = false;
+        while (n && !n.classList.contains('dl-group')) {
+          if (n.classList.contains('dl-item') && n.style.display !== 'none') any = true;
+          n = n.nextElementSibling;
+        }
+        g.style.display = any ? '' : 'none';
+      });
+    }
 
     // Show a "no results" message if nothing matches
     let noResultsRow = table.querySelector('.no-results-row');
     if (visibleCount === 0) {
       if (!noResultsRow) {
-        noResultsRow = document.createElement('tr');
-        noResultsRow.className = 'no-results-row';
-        const colCount = table.querySelectorAll('thead th').length || 2;
-        noResultsRow.innerHTML = `<td colspan="${colCount}">ප්‍රතිඵල හමු නොවීය</td>`;
-        table.querySelector('tbody').appendChild(noResultsRow);
+        if (isList) {
+          noResultsRow = document.createElement('li');
+          noResultsRow.className = 'no-results-row text-center text-muted fst-italic p-3';
+          noResultsRow.textContent = 'ප්‍රතිඵල හමු නොවීය';
+          table.appendChild(noResultsRow);
+        } else {
+          noResultsRow = document.createElement('tr');
+          noResultsRow.className = 'no-results-row';
+          const colCount = table.querySelectorAll('thead th').length || 2;
+          noResultsRow.innerHTML = `<td colspan="${colCount}">ප්‍රතිඵල හමු නොවීය</td>`;
+          table.querySelector('tbody').appendChild(noResultsRow);
+        }
       }
       noResultsRow.style.display = '';
     } else if (noResultsRow) {
