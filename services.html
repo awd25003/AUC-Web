@@ -16,6 +16,7 @@
 
   <div id="site-header"></div>
 
+  <main id="main-content">
   <section class="page-hero">
     <div class="container-xxl">
       <div class="page-hero-box reveal">
@@ -26,121 +27,113 @@
     </div>
   </section>
 
-  <section class="services-section">
-    <div class="services-grid">
+  <section class="svc-section">
+    <div class="container-xxl">
+      <div class="svc-search reveal">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="svcSearch" placeholder="සේවාවක් සොයන්න (උදා: වෙළඳ බලපත්‍ර, වරිපනම්)..." aria-label="සේවා සොයන්න" autocomplete="off">
+        <span id="svcCount" class="svc-count-label" aria-live="polite"></span>
+      </div>
 
-        <div class="service-card">
-            <h4 class="service-title">
-                ඉඩම් හා ගොඩනැගිලි සංවර්ධනය
-                <span class="icon">+</span>
-            </h4>
+      <div class="svc-grid" id="svcGrid">
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-map-location-dot"></i></span><h3>ඉඩම් හා ගොඩනැගිලි සංවර්ධනය</h3></div>
+          <ul class="svc-list">
+            <li>ගොඩනැගිලි සැලසුම් අනුමත කිරීම</li>
+            <li>ඉඩම් අනුබෙදුම් සහ ඒකාබද්ධ කිරීමේ බලපත්‍ර නිකුත් කිරීම</li>
+            <li>සංවර්ධන බලපත්‍රයක වලංගු කාලය දීර්ඝ කිරීම</li>
+            <li>අනවසර ඉදිකිරීම් සඳහා ආවරණ අනුමැතිය ලබා දීම</li>
+            <li>අනුකූලතා සහතික නිකුත් කිරීම</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-land-building.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-            <div class="service-content">
-                <ul>
-                     <li>ගොඩනැගිලි සැලසුම් අනුමත කිරීම</li>
-                    <li>ඉඩම් අනුබෙදුම් සහ ඒකාබද්ධ කිරීමේ බලපත්‍ර නිකුත් කිරීම</li>
-                    <li>සංවර්ධන බලපත්‍රයක වලංගු කාලය දීර්ඝ කිරීම</li>
-                    <li>අනවසර ඉදිකිරීම් සඳහා ආවරණ අනුමැතිය ලබා දීම</li>
-                    <li>අනුකූලතා සහතික නිකුත් කිරීම</li>
-                </ul>
-                <a href="ser-land-building.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-building-columns"></i></span><h3>බැංකු ණය ලබා ගැනීමේදී අවශ්‍ය සහතික</h3></div>
+          <ul class="svc-list">
+            <li>වීථි රේඛා සහ ගොඩනැගිලි සීමා සහතික</li>
+            <li>නොපවරා ගැනීමේ සහතික</li>
+            <li>හිමිකම් සහතික</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-bankloan.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-truck"></i></span><h3>සභා වත්කම් යොදාගත් සේවා ලබාදීම</h3></div>
+          <ul class="svc-list">
+            <li>ජල නළ එළීම සඳහා මාර්ග පළුදු කිරීම</li>
+            <li>වාහන හා යන්ත්‍රෝපකරණ කුලියට දීම</li>
+            <li>ක්‍රීඩා පිටි කුලියට දීම</li>
+            <li>නිදහස් භූමි කුලියට දීම</li>
+            <li>ජල බවුසරයේ සේවාව ලබා දීම</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-sabha-wathkam.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-store"></i></span><h3>ව්‍යාපාරික කටයුතු සඳහා අවශ්‍ය බලපත්‍ර ලබාදීම</h3></div>
+          <ul class="svc-list">
+            <li>පරිසර ආරක්ෂණ බලපත්‍ර නිකුත් කිරීම</li>
+            <li>ප්‍රචාරක දැන්වීම් ප්‍රදර්ශන අවසරපත්‍ර නිකුත් කිරීම</li>
+            <li>වෙළඳ බලපත්‍ර නිකුත් කිරීම</li>
+            <li>ප්‍රසිද්ධ රඟ දැක්වීම් හා සැණකෙළි බලපත්‍ර නිකුත් කිරීම</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-balapathra.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-faucet-drip"></i></span><h3>පොදු උපයෝගි සේවා සහ වෙනත් පහසුකම්</h3></div>
+          <ul class="svc-list">
+            <li>ආදාහනාගාර වෙන් කරවා ගැනීම</li>
+            <li>දේපළ හිමිකම ලියාපදිංචි කිරීම හා සංශෝධනය කිරීම</li>
+            <li>ගලි බවුසර් සේවාව ලබාදීම</li>
+            <li>අනතුරුදායක ගස් ඉවත් කිරීම</li>
+            <li>නිවාස නොවන ස්ථානවල කසළ ඉවත් කිරීම</li>
+            <li>රජයේ ඉඩම් දීර්ඝ කාලීනව බදු දීමේදි ප්‍රාදේශීය ලේකම් වෙත එකඟතාවය</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-podu-upayogi.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-head"><span class="svc-ico"><i class="fa-solid fa-coins"></i></span><h3>බදු හා ගාස්තු අයකිරීම</h3></div>
+          <ul class="svc-list">
+            <li>වරිපනම් අයකිරීම</li>
+            <li>කර්මාන්ත බදු අය කිරීම</li>
+            <li>විනෝද බදු අය කිරීම</li>
+            <li>ඉඩම් විකිණීම මත බදු අය කිරීම</li>
+            <li>සංවර්ධනය නොකළ ඉඩම් මත බදු අයකිරීම</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="ser-badu.html" class="svc-btn primary">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div id="svcEmpty" class="svc-empty" hidden>ඔබ සෙවූ සේවාව හමු නොවීය. වෙනත් වචනයකින් උත්සාහ කරන්න.</div>
+
+      <div class="svc-cta reveal">
+        <div>
+          <h3>සේවා පිළිබඳ විමසීම්</h3>
+          <p>සේවා සම්බන්ධ විමසීම් සඳහා කාර්යාලය අමතන්න හෝ පණිවිඩයක් එවන්න.</p>
+          <p class="svc-cta-meta"><i class="fa-solid fa-phone"></i> <a href="tel:+94912258275">+94 91 225 8275</a> &nbsp; <i class="fa-regular fa-clock"></i> සඳුදා - සිකුරාදා | පෙ.ව. 8.30 - ප.ව. 4.15</p>
         </div>
-
-        <div class="service-card">
-            <h4 class="service-title">
-                බැංකු ණය ලබා ගැනීමේදී අවශ්‍ය සහතික
-                <span class="icon">+</span>
-            </h4>
-
-            <div class="service-content">
-                <ul>
-                    <li>වීථි රේඛා සහ ගොඩනැගිලි සීමා සහතික</li>
-                    <li>නොපවරා ගැනීමේ සහතික</li>
-                    <li>හිමිකම් සහතික</li>
-                </ul>
-                  <a href="ser-bankloan.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+        <div class="svc-cta-btns">
+          <a href="contact.html" class="svc-btn light"><i class="fa-solid fa-paper-plane"></i> පණිවිඩයක් යවන්න</a>
         </div>
-
-        <div class="service-card">
-            <h4 class="service-title">
-                සභා වත්කම් යොදාගත් සේවා ලබාදීම 
-                <span class="icon">+</span>
-            </h4>
-
-            <div class="service-content">
-                <ul>
-                    <li>ජල නළ එළීම සඳහා මාර්ග පළුදු කිරීම </li>
-                    <li>වාහන හා යන්ත්‍රෝපකරණ කුලියට දීම </li>
-                    <li>ක්‍රීඩා පිටි කුලියට දීම</li>
-                    <li> නිදහස් භූමි කුලියට දීම</li>
-                    <li>ජල බවුසරයේ සේවාව ලබා දීම</li>
-                </ul>
-                  <a href="ser-sabha-wathkam.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <h4 class="service-title">
-               ව්‍යාපාරික කටයුතු සඳහා අවශ්‍ය බලපත්‍ර ලබාදීම 
-                <span class="icon">+</span>
-            </h4>
-
-            <div class="service-content">
-                <ul>
-                    <li>පරිසර ආරක්ෂණ බලපත්‍ර නිකුත් කිරීම</li>
-                    <li>ප්‍රචාරක දැන්වීම් ප්‍රදර්ශන අවසරපත්‍ර නිකුත් කිරීම</li>
-                    <li>වෙළඳ බලපත්‍ර බලපත්‍ර නිකුත් කිරීම</li>
-                    <li>ප්‍රසිද්ධ රඟ දැක්වීම් හා සැණකෙළි බලපත්‍ර  නිකුත් කිරීම</li>
-                    
-                </ul>
-                  <a href="ser-balapathra.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <h4 class="service-title">
-                පොදු උපයෝගි සේවා සහ වෙනත් පහසුකම්
-                <span class="icon">+</span>
-            </h4>
-
-            <div class="service-content">
-                <ul>
-                    <li>ආදාහනාගාර වෙන් කරවා ගැනීම</li>
-                    <li>දේපළ හිමිකම ලියාපදිංචි කිරීම හා සංශෝධනය කිරීම </li>
-                     <li> ගලි බවුසර් සේවාව ලබාදීම </li>
-                    <li>අනතුරුදායක ගස් ඉවත් කිරීම </li>
-                    <li>නිවාස නොවන ස්ථානවල කසළ ඉවත් කිරීම</li>
-                   <li>රජයේ ඉඩම් දීර්ඝ කාලීනව බදු දීමේදි ප්‍රාදේශීය ලේකම් වෙත එකඟතාවය   </li>
-                   
-                </ul>
-                  <a href="ser-podu-upayogi.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <h4 class="service-title">
-               බදු හා ගාස්තු අයකිරීම
-                <span class="icon">+</span>
-            </h4>
-
-            <div class="service-content">
-                <ul>
-                    <li>වරිපනම් අයකිරීම</li>
-                    <li>කර්මාන්ත බදු අය කිරීම</li>
-                    <li>විනෝද බදු අය කිරීම </li>
-                    <li>ඉඩම් විකිණීම මත බදු අය කිරීම</li>
-                    <li>සංවර්ධනය නොකළ ඉඩම් මත බදු අයකිරීම </li>
-                    
-                </ul>
-                  <a href="ser-badu.html" class="card-link">වැඩිදුර බලන්න <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
+  </main>
   <div id="site-footer"></div>
   <button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -149,5 +142,6 @@
   <script src="footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js.js"></script>
+  <script src="services.js"></script>
 </body>
 </html>

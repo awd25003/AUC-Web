@@ -504,6 +504,16 @@ document.querySelectorAll('.table-search-input').forEach(input => {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js.js"></script>
   <script>
+    (function () {
+      var name = location.hash.replace('#', '');
+      if (!name || !window.bootstrap) return;
+      var t = document.querySelector('#dlTabs [data-bs-target="#pane-' + name + '"]');
+      if (!t) return;
+      bootstrap.Tab.getOrCreateInstance(t).show();
+      setTimeout(function () { document.getElementById('dlTabs').scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 150);
+    })();
+  </script>
+  <script>
     document.querySelectorAll('#dlTabs [data-bs-toggle="tab"]').forEach(function (t) {
       t.addEventListener('shown.bs.tab', function () { t.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' }); });
     });
