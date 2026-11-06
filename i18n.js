@@ -5,7 +5,7 @@
     si: {
       "site.name": "අම්බලන්ගොඩ නගර සභාව", "greet": "ආයුබෝවන්", "charter": "පුරවැසි ප්‍රඥප්තිය",
       "top.loc": "අම්බලන්ගොඩ, ශ්‍රී ලංකාව", "search": "සොයන්න...", "skip": "ප්‍රධාන අන්තර්ගතයට යන්න",
-      "nav.home": "මුල් පිටුව", "nav.about": "අපගැන", "nav.about1": "අම්බලන්ගොඩ ගැන", "nav.members": "සභික මණ්ඩලය",
+      "nav.home": "මුල් පිටුව", "nav.about": "අපගැන", "nav.about1": "අම්බලන්ගොඩ නගර සභාව", "nav.members": "සභික මණ්ඩලය",
       "nav.staff": "කාර්ය මණ්ඩලය", "nav.services": "සේවාවන්", "nav.inst": "ආයතන", "nav.pre": "පෙරපාසල්",
       "nav.ayur": "ආයුර්වේද", "nav.lib": "පුස්තකාල", "nav.tenders": "ටෙන්ඩර් සහ දැන්වීම්", "nav.news": "පුවත්", "nav.hub": "තොරතුරු මධ්‍යස්ථානය", "nav.notices": "දැන්වීම්",
       "nav.pay": "අන්තර්ජාල ගෙවීම්", "nav.rti": "තොරතුරු පනත", "nav.dl": "බාගත කිරීම්", "nav.contact": "සම්බන්ධවන්න",
@@ -31,12 +31,15 @@
       "i.ayur": "ආයුර්වේද", "i.ayurD": "ප්‍රදේශවාසීන් සඳහා සාම්ප්‍රදායික ආයුර්වේද සෞඛ්‍ය සේවා.",
       "i.lib": "පුස්තකාල", "i.libD": "කියවීමේ සංස්කෘතිය දියුණු කරන ප්‍රජා පුස්තකාල.",
       "i.addr": "ලිපිනය", "i.tel": "දුරකථන", "i.hours": "විවෘත වේලාවන්", "i.head": "භාරකරු / ප්‍රධානී", "i.more": "විස්තර",
-      "i.soon": "මෙම අංශයේ විස්තර ඉක්මනින් එක් කෙරේ.", "i.back": "ආයතන ලැයිස්තුවට"
+      "i.soon": "මෙම අංශයේ විස්තර ඉක්මනින් එක් කෙරේ.", "i.back": "ආයතන ලැයිස්තුවට",
+      "s.title": "සෙවුම් ප්‍රතිඵල", "s.sub": "පුවත්, සේවා, ලේඛන සහ පිටු අතරින් සොයන්න.", "s.btn": "සොයන්න",
+      "nb.title": "දැන්වීම් පුවරුව", "nb.sub": "එදිනෙදා නිවේදන සහ වැදගත් දැන්වීම්", "nb.urgent": "හදිසි", "nb.more": "විස්තර බලන්න", "nb.all": "සියලු දැන්වීම්", "nb.none": "දැනට දැන්වීම් නොමැත.", "nb.until": "දක්වා", "nb.sample": "නිදර්ශනයකි",
+      "c.mailto": "ඊමේල් යෙදුමෙන් යවන්න"
     },
     ta: {
       "site.name": "அம்பலாங்கொடை நகர சபை", "greet": "வணக்கம்", "charter": "குடிமக்கள் சாசனம்",
       "top.loc": "அம்பலாங்கொடை, இலங்கை", "search": "தேடுக...", "skip": "முதன்மை உள்ளடக்கத்திற்குச் செல்லவும்",
-      "nav.home": "முகப்பு", "nav.about": "எம்மைப் பற்றி", "nav.about1": "அம்பலாங்கொடை பற்றி", "nav.members": "சபை உறுப்பினர்கள்",
+      "nav.home": "முகப்பு", "nav.about": "எம்மைப் பற்றி", "nav.about1": "அம்பலாங்கொடை நகர சபை", "nav.members": "சபை உறுப்பினர்கள்",
       "nav.staff": "ஊழியர் குழு", "nav.services": "சேவைகள்", "nav.inst": "நிறுவனங்கள்", "nav.pre": "முன்பள்ளிகள்",
       "nav.ayur": "ஆயுர்வேதம்", "nav.lib": "நூலகங்கள்", "nav.tenders": "கேள்விப்பத்திரங்களும் அறிவித்தல்களும்", "nav.news": "செய்திகள்", "nav.hub": "தகவல் நிலையம்", "nav.notices": "அறிவித்தல்கள்",
       "nav.pay": "இணையவழி கொடுப்பனவுகள்", "nav.rti": "தகவல் அறியும் உரிமை", "nav.dl": "பதிவிறக்கங்கள்", "nav.contact": "தொடர்புகொள்ள",
@@ -62,12 +65,15 @@
       "i.ayur": "ஆயுர்வேதம்", "i.ayurD": "பிரதேச மக்களுக்கான பாரம்பரிய ஆயுர்வேத சுகாதார சேவைகள்.",
       "i.lib": "நூலகங்கள்", "i.libD": "வாசிப்புப் பழக்கத்தை வளர்க்கும் சமூக நூலகங்கள்.",
       "i.addr": "முகவரி", "i.tel": "தொலைபேசி", "i.hours": "திறந்திருக்கும் நேரம்", "i.head": "பொறுப்பாளர்", "i.more": "விவரங்கள்",
-      "i.soon": "இப்பிரிவின் விவரங்கள் விரைவில் சேர்க்கப்படும்.", "i.back": "நிறுவனப் பட்டியலுக்கு"
+      "i.soon": "இப்பிரிவின் விவரங்கள் விரைவில் சேர்க்கப்படும்.", "i.back": "நிறுவனப் பட்டியலுக்கு",
+      "s.title": "தேடல் முடிவுகள்", "s.sub": "செய்திகள், சேவைகள், ஆவணங்கள் மற்றும் பக்கங்களில் தேடுங்கள்.", "s.btn": "தேடுக",
+      "nb.title": "அறிவித்தல் பலகை", "nb.sub": "அன்றாட அறிவிப்புகள் மற்றும் முக்கிய அறிவித்தல்கள்", "nb.urgent": "அவசரம்", "nb.more": "விவரங்கள்", "nb.all": "அனைத்து அறிவித்தல்கள்", "nb.none": "தற்போது அறிவித்தல்கள் இல்லை.", "nb.until": "வரை", "nb.sample": "மாதிரி",
+      "c.mailto": "மின்னஞ்சல் செயலி மூலம் அனுப்புக"
     },
     en: {
       "site.name": "Ambalangoda Urban Council", "greet": "Welcome", "charter": "Citizen's Charter",
       "top.loc": "Ambalangoda, Sri Lanka", "search": "Search here...", "skip": "Skip to main content",
-      "nav.home": "Home", "nav.about": "About Us", "nav.about1": "About Ambalangoda", "nav.members": "Council Members",
+      "nav.home": "Home", "nav.about": "About Us", "nav.about1": "Ambalangoda Urban Council", "nav.members": "Council Members",
       "nav.staff": "Staff", "nav.services": "Services", "nav.inst": "Institutions", "nav.pre": "Preschools",
       "nav.ayur": "Ayurvedic", "nav.lib": "Libraries", "nav.tenders": "Tenders & Notices", "nav.news": "News", "nav.hub": "Information Centre", "nav.notices": "Notices",
       "nav.pay": "Online Payments", "nav.rti": "Right to Information", "nav.dl": "Downloads", "nav.contact": "Contact",
@@ -93,7 +99,10 @@
       "i.ayur": "Ayurvedic", "i.ayurD": "Traditional Ayurvedic health services for local residents.",
       "i.lib": "Libraries", "i.libD": "Community libraries that nurture a culture of reading.",
       "i.addr": "Address", "i.tel": "Telephone", "i.hours": "Opening hours", "i.head": "In charge", "i.more": "Details",
-      "i.soon": "Details for this section will be added soon.", "i.back": "Back to institutions"
+      "i.soon": "Details for this section will be added soon.", "i.back": "Back to institutions",
+      "s.title": "Search results", "s.sub": "Search across news, services, documents and pages.", "s.btn": "Search",
+      "nb.title": "Notice Board", "nb.sub": "Daily announcements and important notices", "nb.urgent": "Urgent", "nb.more": "View details", "nb.all": "All notices", "nb.none": "There are no notices right now.", "nb.until": "until", "nb.sample": "Sample",
+      "c.mailto": "Send with your email app"
     }
   };
   var KEY = "auc_lang", LANGS = ["si", "ta", "en"];

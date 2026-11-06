@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
               <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
+                 2027 අයවැය මහා සභාවට ඉදිරිපත් කිරීම 2026 නොවැම්බර් මස 10 වැනිදා.
               </a>
 
               <a href="downloads.html" class="flash-news-item">
@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
               <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
+                 2027 අයවැය මහා සභාවට ඉදිරිපත් කිරීම 2026 නොවැම්බර් මස 10 වැනිදා.
               </a>
 
               <a href="news-details.html?id=2" class="flash-news-item">
                 <span class="news-chip">Service</span>
-                හෙළ බොජුන්හල සුබ මොහොතින් විවෘත කරන ලදී.
+                2027 අයවැය මහා සභාවට ඉදිරිපත් කිරීම 2026 නොවැම්බර් මස 10 .
               </a>
             </div>
           </div>
@@ -148,6 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="nb-section" id="noticeBoard" aria-label="දැන්වීම් පුවරුව">
+      <div class="container-xxl"><div id="noticeBoardMount"></div></div>
     </section>
 
     <section class="section-space section-light">

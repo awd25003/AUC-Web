@@ -68,22 +68,23 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item"><a class="nav-link ${on(["services"])}" href="services.html" data-i18n="nav.services">සේවාවන්</a></li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle ${on(["news","tenders","institutions"])}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.hub">තොරතුරු මධ්‍යස්ථානය</a>
+                <a class="nav-link dropdown-toggle ${on(["news","tenders","institutions","information"])}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.hub">තොරතුරු මධ්‍යස්ථානය</a>
                 <ul class="dropdown-menu premium-dropdown">
                   <li><a class="dropdown-item" href="news.html" data-i18n="nav.news">පුවත්</a></li>
                   <li><a class="dropdown-item" href="tenders.html" data-i18n="nav.notices">දැන්වීම්</a></li>
                   <li><a class="dropdown-item" href="institutions.html" data-i18n="nav.inst">ආයතන</a></li>
+                  <li><a class="dropdown-item" href="information.html" data-i18n="nav.rti">තොරතුරු පනත</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link ${on(["payments"])}" href="payments.html" data-i18n="nav.pay">අන්තර්ජාල ගෙවීම්</a></li>
-              <li class="nav-item"><a class="nav-link ${on(["information"])}" href="information.html" data-i18n="nav.rti">තොරතුරු පනත</a></li>
               <li class="nav-item"><a class="nav-link ${on(["downloads"])}" href="downloads.html" data-i18n="nav.dl">බාගත කිරීම්</a></li>
               <li class="nav-item"><a class="nav-link ${on(["contact"])}" href="contact.html" data-i18n="nav.contact">සම්බන්ධවන්න</a></li>
             </ul>
 
-            <form class="nav-search" role="search" onsubmit="return false;">
-              <input type="search" data-i18n-ph="search" placeholder="Search here..." aria-label="Search">
+            <form class="nav-search" id="navSearch" role="search" action="search.html" method="get" autocomplete="off">
+              <input type="search" name="q" id="navSearchInput" data-i18n-ph="search" placeholder="සොයන්න..." aria-label="Search" aria-autocomplete="list" aria-controls="navSearchResults" aria-expanded="false">
               <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="ns-results" id="navSearchResults" role="listbox" hidden></div>
             </form>
           </div>
         </div>
@@ -92,4 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
 
   document.dispatchEvent(new Event("siteHeaderReady"));
+
+  // load the site-search engine on every page (once)
+  if (!document.querySelector('script[data-site-search]') && !window.__AUC_SEARCH__) {
+    window.__AUC_SEARCH__ = true;
+    var ss = document.createElement("script");
+    ss.src = "search.js"; ss.defer = true; ss.setAttribute("data-site-search", "1");
+    document.body.appendChild(ss);
+  }
 });
