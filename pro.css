@@ -158,3 +158,48 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 @media(max-width:767.98px){.sd-card-body{grid-template-columns:minmax(0,1fr);padding:16px}.sd-card-head{padding:14px 16px}}
 @media print{.sd-index,.sd-back,.svc-cta,.sd-more{display:none!important}.sd-card{break-inside:avoid;box-shadow:none}}
+.sd-fee-attach {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(0, 0, 0, .15);
+}
+.sd-fee-pdf {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid #d9534f;
+  border-radius: 10px;
+  color: #b02a37;
+  background: #fff5f5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.sd-fee-pdf:hover {
+  background: #ffe3e3;
+  transform: translateY(-1px);
+}
+.sd-fee-pdf span { flex: 1; }
+.sd-fee-pdf .fa-file-pdf { font-size: 1.3rem; }
+.page-hero-box::before,
+.page-hero-box::after,
+.sd-hero::before,
+.sd-hero::after {
+  pointer-events: none !important;
+}
+
+.sd-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sd-back {
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  pointer-events: auto !important;
+}

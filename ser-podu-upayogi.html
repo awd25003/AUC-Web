@@ -13,6 +13,34 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="pro.css">
+
+  <!-- ගාස්තු PDF attachment button styles (ඕනෙ නම් මේක pro.css එකට ගිහින් දාන්න) -->
+  <style>
+    .sd-fee-attach {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(0, 0, 0, .15);
+    }
+    .sd-fee-pdf {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid #d9534f;
+      border-radius: 10px;
+      color: #b02a37;
+      background: #fff5f5;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .sd-fee-pdf:hover {
+      background: #ffe3e3;
+      transform: translateY(-1px);
+    }
+    .sd-fee-pdf span { flex: 1; }
+    .sd-fee-pdf .fa-file-pdf { font-size: 1.3rem; }
+  </style>
 </head>
 <body data-page="services">
   <div id="site-header"></div>
@@ -38,6 +66,8 @@
           <nav class="sd-index" aria-label="සේවා ලැයිස්තුව"><p class="sd-index-title">මෙම පිටුවේ සේවා</p><div class="sd-index-list"><a href="#svc-1" class="sd-index-link"><span>1</span>ආදාහනාගාර වෙන් කරවා ගැනීම</a><a href="#svc-2" class="sd-index-link"><span>2</span>දේපළ හිමිකම ලියාපදිංචි කිරීම හා සංශෝධනය කිරීම</a><a href="#svc-3" class="sd-index-link"><span>3</span>මල අපද්‍රව්‍ය ඉවත් කිරීමේ සේවාව ලබාදීම (ගලි බවුසර්)</a><a href="#svc-4" class="sd-index-link"><span>4</span>අනතුරුදායක ගස් ඉවත් කිරීම</a><a href="#svc-5" class="sd-index-link"><span>5</span>නිවාස නොවන ස්ථානවල කසළ ඉවත් කිරීම</a><a href="#svc-6" class="sd-index-link"><span>6</span>රජයේ ඉඩම් දීර්ඝ කාලීනව බදු දීමේදි ප්‍රාදේශීය ලේකම් වෙත එකඟතාවය</a></div></nav>
         </div>
         <div class="col-lg-9">
+
+        <!-- ===================== SERVICE 1 ===================== -->
         <article class="sd-card" id="svc-1">
           <header class="sd-card-head"><span class="sd-num">1</span><h2>ආදාහනාගාර වෙන් කරවා ගැනීම</h2></header>
           <div class="sd-card-body">
@@ -52,8 +82,21 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
-                <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <p class="sd-fee-value">පටබැඳිමුල්ල ආදාහනාගාරය
+                  <br>පොල්වත්ත ආදාහනාගාරය
+                  <br><br>නගර සභා සීමාව තුළ = රු.12000.00
+                  <br>න.ස. සීමාව තුළ සමෘද්ධිලාභීන් = රු.8000.00
+                  <br>නගර සභා සීමාවෙන් පිටත = රු.15000.00
+                  <br><br> ආදාහනාගාරය ලබා දෙන දිනක කාලසටහන
+                  <br>පෙ.ව.10.00/ ප.ව.1.00 / ප.ව.3.00 / ප.ව.5.00
+                </p>
+                <div class="sd-fee-attach">
+                  <!--<a href="uploads/pdf/fees-svc1.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>-->
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -66,6 +109,8 @@
             </aside>
           </div>
         </article>
+
+        <!-- ===================== SERVICE 2 ===================== -->
         <article class="sd-card" id="svc-2">
           <header class="sd-card-head"><span class="sd-num">2</span><h2>දේපළ හිමිකම ලියාපදිංචි කිරීම හා සංශෝධනය කිරීම</h2></header>
           <div class="sd-card-body">
@@ -79,8 +124,15 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
                 <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <!-- PDF එකක් නැත්නම් පහත sd-fee-attach div එක ඉවත් කරන්න -->
+                <div class="sd-fee-attach">
+                  <!--<a href="uploads/pdf/fees-svc2.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>-->
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -93,6 +145,8 @@
             </aside>
           </div>
         </article>
+
+        <!-- ===================== SERVICE 3 ===================== -->
         <article class="sd-card" id="svc-3">
           <header class="sd-card-head"><span class="sd-num">3</span><h2>මල අපද්‍රව්‍ය ඉවත් කිරීමේ සේවාව ලබාදීම (ගලි බවුසර්)</h2></header>
           <div class="sd-card-body">
@@ -105,8 +159,15 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
-                <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <p class="sd-fee-value"></p>
+                <!-- PDF එකක් නැත්නම් පහත sd-fee-attach div එක ඉවත් කරන්න -->
+                <div class="sd-fee-attach">
+                  <a href="uploads/pdf/New folder/gali.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -119,6 +180,8 @@
             </aside>
           </div>
         </article>
+
+        <!-- ===================== SERVICE 4 ===================== -->
         <article class="sd-card" id="svc-4">
           <header class="sd-card-head"><span class="sd-num">4</span><h2>අනතුරුදායක ගස් ඉවත් කිරීම</h2></header>
           <div class="sd-card-body">
@@ -131,8 +194,15 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
-                <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <p class="sd-fee-value">අයදුම්පත්‍ර ගාස්තුව රු.1500.00 </p>
+                <!-- PDF එකක් නැත්නම් පහත sd-fee-attach div එක ඉවත් කරන්න -->
+                <div class="sd-fee-attach">
+                  <!--<a href="uploads/pdf/fees-svc4.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>-->
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -145,6 +215,8 @@
             </aside>
           </div>
         </article>
+
+        <!-- ===================== SERVICE 5 ===================== -->
         <article class="sd-card" id="svc-5">
           <header class="sd-card-head"><span class="sd-num">5</span><h2>නිවාස නොවන ස්ථානවල කසළ ඉවත් කිරීම</h2></header>
           <div class="sd-card-body">
@@ -157,8 +229,15 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
-                <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <p class="sd-fee-value"></p>
+                <!-- PDF එකක් නැත්නම් පහත sd-fee-attach div එක ඉවත් කරන්න -->
+                <div class="sd-fee-attach">
+                  <a href="uploads/pdf/New folder/kasala.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -171,6 +250,8 @@
             </aside>
           </div>
         </article>
+
+        <!-- ===================== SERVICE 6 ===================== -->
         <article class="sd-card" id="svc-6">
           <header class="sd-card-head"><span class="sd-num">6</span><h2>රජයේ ඉඩම් දීර්ඝ කාලීනව බදු දීමේදි ප්‍රාදේශීය ලේකම් වෙත එකඟතාවය</h2></header>
           <div class="sd-card-body">
@@ -183,8 +264,15 @@
             <aside class="sd-side">
               <div class="sd-box sd-fee">
                 <h3><i class="fa-solid fa-coins"></i> ගාස්තු</h3>
-                <!-- ගාස්තුව ඇතුළත් කිරීමට: පහත "ගාස්තු පිළිබඳ..." වාක්‍යය වෙනුවට ලියන්න (උදා: රු. 1,500.00). -->
                 <p class="sd-fee-value">ගාස්තු පිළිබඳ විස්තර සඳහා කාර්යාලය අමතන්න</p>
+                <!-- PDF එකක් නැත්නම් පහත sd-fee-attach div එක ඉවත් කරන්න -->
+                <div class="sd-fee-attach">
+                  <a href="uploads/pdf/fees-svc6.pdf" data-doc target="_blank" rel="noreferrer" class="sd-fee-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>ගාස්තු ලැයිස්තුව (PDF)</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
               </div>
               <div class="sd-box">
                 <h3><i class="fa-solid fa-file-lines"></i> ඉල්ලුම්පත්‍ර</h3>
@@ -197,6 +285,7 @@
             </aside>
           </div>
         </article>
+
         </div>
       </div>
 
