@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ${on(["ambalangoda","members","staff"])}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">අපගැන</a>
                 <ul class="dropdown-menu premium-dropdown">
-                  <li><a class="dropdown-item" href="ambalangoda.html" data-i18n="nav.about1">අම්බලන්ගොඩ ගැන</a></li>
+                  <li><a class="dropdown-item" href="ambalangoda.html" data-i18n="nav.about1">අම්බලන්ගොඩ නගර සභාව</a></li>
                   <li><a class="dropdown-item" href="council-members.html" data-i18n="nav.members">සභික මණ්ඩලය</a></li>
                   <li><a class="dropdown-item" href="staff.html" data-i18n="nav.staff">කාර්ය මණ්ඩලය</a></li>
                 </ul>
