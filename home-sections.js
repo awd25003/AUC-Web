@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="flash-news-track">
               <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
+                2027 අයවැය ලේඛනය, බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
               <a href="downloads.html" class="flash-news-item">
@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="news-details.html?id=2" class="flash-news-item">
-                <span class="news-chip">Service</span>
-                 2027 අයවැය මහා සභාවට ඉදිරිපත් කිරීම 2026 නොවැම්බර් මස 10 වැනිදා.
+              <a href="news-details.html?id=4" class="flash-news-item">
+                <span class="news-chip">NEW</span>
+                 ජාතික කියවීමේ මාසය – 2026 තරගාවලියේ  නගර සභා පුස්තකාල අංශයෙන් දිවයිනෙන් දෙවන ස්ථානය අම්බලන්ගොඩ නගර සභා මහජන පුස්තකාලයට! 
               </a>
 
               <a href="downloads.html" class="flash-news-item">
                 <span class="news-chip">NEW</span>
-                2026 අයවැය ලේඛන ඇතුළු වාර්තා බාගත කිරීම් අංශයට එකතු කර ඇත.
+                 2027 අයවැය ලේඛනය, බාගත කිරීම් අංශයට එකතු කර ඇත.
               </a>
 
               <a href="downloads.html" class="flash-news-item">
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 නව අයදුම්පත් සහ නිල ලේඛන බාගත කිරීම් අංශයට එක් කර ඇත
               </a>
 
-              <a href="news-details.html?id=2" class="flash-news-item">
+              <a href="news-details.html?id=4" class="flash-news-item">
                 <span class="news-chip">Service</span>
                  2027 අයවැය මහා සභාවට ඉදිරිපත් කිරීම 2026 නොවැම්බර් මස 10 වැනිදා.
               </a>
@@ -317,14 +317,29 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <article class="news-card reveal">
               <div class="news-image">
-                <img src="uploads/news/2026 jan/1.jpg" alt="news1">
+                <img src="uploads/news/LIBWIN/2.jpg" alt="news1">
                 <span class="news-badge">News</span>
               </div>
               <div class="news-content">
-                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-03-01</div>
-                <h4>නව වසරේ රාජකාරී කටයුතු උත්සවශීලීව ආරම්භ විය</h4>
-                <p>නව වසරේ රාජකාරී කටයුතු ආශීර්වාද මධ්‍යයේ ආරම්භ කරන ලදී.</p>
-                <a href="news-details.html?id=1" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-11-13</div>
+                <h4>ජාතික කියවීමේ මාසය – 2026 තරගාවලියේ  නගර සභා පුස්තකාල අංශයෙන් දිවයිනෙන් දෙවන ස්ථානය අම්බලන්ගොඩ නගර සභා මහජන පුස්තකාලයට! 📚</h4>
+                <p></p>
+                <a href="news-details.html?id=4" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="news-card reveal">
+              <div class="news-image">
+                <img src="uploads/news/kite/kite 8.jpeg" alt="news3">
+                <span class="news-badge">New</span>
+              </div>
+              <div class="news-content">
+                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-08-07</div>
+                <h4>KITE FESTIVAL 2026</h4>
+                <p>අම්බලන්ගොඩ නගර සභා පෙරපාසල් මගින් සංවිධානය කළ සරුංගල් සැණකෙළීය</p>
+                <a href="news-details.html?id=3" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -344,20 +359,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </article>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <article class="news-card reveal">
-              <div class="news-image">
-                <img src="uploads/news/kite/kite 8.jpeg" alt="news3">
-                <span class="news-badge">New</span>
-              </div>
-              <div class="news-content">
-                <div class="news-date"><i class="fa-regular fa-calendar"></i> 2026-08-07</div>
-                <h4>KITE FESTIVAL 2026</h4>
-                <p>අම්බලන්ගොඩ නගර සභා පෙරපාසල් මගින් සංවිධානය කළ සරුංගල් සැණකෙළීය</p>
-                <a href="news-details.html?id=3" class="news-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
+          
         </div>
       </div>
     </section>
