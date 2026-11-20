@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="stat-card reveal">
             <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
             <div>
-              <h3 data-counter="27695">0</h3>
+              <h3 data-counter="26860">0</h3>
               <p>ජනගහණය</p>
             </div>
           </div>
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="stat-card reveal">
             <div class="stat-icon"><i class="fa-solid fa-house"></i></div>
             <div>
-              <h3 data-counter="10886">0</h3>
+              <h3 data-counter="10641">0</h3>
               <p>වරිපනම් දේපල සංඛ්‍යාව</p>
             </div>
           </div>
